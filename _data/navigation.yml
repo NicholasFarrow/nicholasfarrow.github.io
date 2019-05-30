@@ -2,6 +2,8 @@
 main:
   - title: "About Me"
     url: /about/
+  - title: "Résumé"
+    url: /assets/Nicholas_Farrow_Resume__web_edition_.pdf
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"

@@ -17,6 +17,7 @@ My name is Nicholas Farrow, I currently am:
 * part-time mathematics & physics tutor, as well as some ski instructing during the Australian winter.
 
 
+
 Most recently I have been interested in:
 * Custom unix desktop environments, particularly tiling window manager i3:
   - ![desktop image](/assets/images/desktop.png)
