@@ -5,7 +5,6 @@ header:
   teaser: "/assets/images/ethVanTeaser.png"
 ---
 
-# Creating Ethereum Vanity Addresses with Python [0x00000...]
 We wish to be able to create ethereum vanity addresses like `0xda66666666c3a809ADA79D93114a3662476cC0` through the only option possible, brute force.
 
 First we will need the `ethereum` **Python 3** module which easily allows us to create a *private key* which is then used generate a *public key*, hopefully with the pattern of characters which we desire `0x1234...`. 
