@@ -3,7 +3,7 @@ layout: posts
 title: "Creating Ethereum Vanity Addresses with Python [0x0000]"
 author_profile: true
 header:
-  og_image: "/assets/images/aliciaandi.png"
+  og_image: "/assets/images/aliciaandi.jpg"
 #header:
 #image: "/assets/images/aliciaandi.jpg"
 ---
