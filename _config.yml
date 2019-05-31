@@ -130,7 +130,7 @@ author:
       url: "https://github.com/NicholasFarrow"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/farrow_"
+      #url: "https://instagram.com/farrow_"
 
 # Site Footer
 footer:
