@@ -32,7 +32,7 @@ nick@nick:~/repos$ python3.7 vanGen.py
 b"m\x92\xdc\x82\x06\x11\x12\xae\x13\x14'\xe3O\x83\x88\xc8\xfd\xc4\x960k\x12f\x1d\xd4\xf4\xa6\tcN\x06U"
 ~~~
 Here we have generated a private key using a string of 4096 random bytes.
-Next we convert this private key into an address in bytes `rawAddress` and then convert it into a hex checksum `accAddress`:
+Next we use this private key to generate an address in bytes `rawAddress`, and then we convert it into a hex checksum address `accAddress` (the familiar 0xf42eB52C2590F7E... format):
 
 ~~~python
 rawAddress = utils.privtoaddr(privKey)
@@ -100,4 +100,4 @@ nick@nick:~/repos$ python3.7 vanGen.py
 Found address: 0x5AA832a1491016FAAd444444f4D792A73aa2a550
 Private Key (hex) 64a7b90c3361d8fdfed44dc1eeee351405a0acfbcd15b71bc8c751f50ac58371
 ~~~
-There are lots of other custom addresses you can search for. For example you can look for words which use characters `A-F` with alphanumeric words. An (old) [implimentation of this is on my gitub](https://github.com/NicholasFarrow/ethereumVanityAddressGenerator/blob/master/ethereumVanityGen.py).
+There are lots of other custom addresses you can search for. For example you can look for words which use characters `A-F` with alphanumeric words. An (old) [implimentation of this is on my Github](https://github.com/NicholasFarrow/ethereumVanityAddressGenerator/blob/master/ethereumVanityGen.py).
