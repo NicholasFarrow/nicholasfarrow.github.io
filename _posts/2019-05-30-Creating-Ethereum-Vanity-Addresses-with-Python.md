@@ -1,13 +1,15 @@
 ---
-layout: home
+layout: posts
+title: "Creating Ethereum Vanity Addresses with Python [0x0000]"
 author_profile: true
+image: "/assets/images/ethVanTeaser.png"
 header:
   teaser: "/assets/images/ethVanTeaser.png"
 ---
 
 We wish to be able to create ethereum vanity addresses like `0xda66666666c3a809ADA79D93114a3662476cC0` through the only option possible, brute force.
 
-First we will need the `ethereum` **Python 3** module which easily allows us to create a *private key* which is then used generate a *public key*, hopefully with the pattern of characters which we desire `0x1234...`. 
+First we will need the `ethereum` **Python 3** module which easily allows us to create a *private key* which is then used generate a *public key*, hopefully with the pattern of characters which we desire `0x1234...`.
 
 Into your terminal type:
 ~~~shell
@@ -25,7 +27,7 @@ print(privKey)
 ~~~
 Running the file in a terminal:
 ~~~shell
-nick@nick:~/repos$ python3.7 vanGen.py 
+nick@nick:~/repos$ python3.7 vanGen.py
 b"m\x92\xdc\x82\x06\x11\x12\xae\x13\x14'\xe3O\x83\x88\xc8\xfd\xc4\x960k\x12f\x1d\xd4\xf4\xa6\tcN\x06U"
 ~~~
 Here we have generated a private key using a string of 4096 random bytes.
@@ -60,7 +62,7 @@ while True:
 ~~~
 
 ~~~shell
-nick@nick:~/repos$ python3.7 vanGen.py 
+nick@nick:~/repos$ python3.7 vanGen.py
 Found address: 0x000de1d80326F378FB030d5DF5AdE42B717aE534
 Private Key b'$[\x93\xfek|\xfd\xc9\x02{\x0b\xcdeSl\xbaIu\xe7(\xcd\x02\x9bN\xadO\x81"\xc2\xee\xf0\xaf'
 Found address: 0x0006b6dF8dd9F95206B621E338dBb9c7c907D836
@@ -93,9 +95,8 @@ while True:
 ~~~
 
 ~~~shell
-nick@nick:~/repos$ python3.7 vanGen.py 
+nick@nick:~/repos$ python3.7 vanGen.py
 Found address: 0x5AA832a1491016FAAd444444f4D792A73aa2a550
 Private Key (hex) 64a7b90c3361d8fdfed44dc1eeee351405a0acfbcd15b71bc8c751f50ac58371
 ~~~
 There are lots of other custom addresses you can search for. For example you can look for words which use characters `A-F` with alphanumeric words. An (old) [implimentation of this is on my gitub](https://github.com/NicholasFarrow/ethereumVanityAddressGenerator/blob/master/ethereumVanityGen.py).
-
