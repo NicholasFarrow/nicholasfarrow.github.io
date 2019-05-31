@@ -20,7 +20,7 @@ title                    : "Nick Farrow"
 title_separator          : "//"
 name                     : "Nicholas Farrow"
 description              : "Welcome to my (broken) website."
-url                      : "https://nicholasfarrow.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://nicholasfarrow.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/teaser.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -111,7 +111,7 @@ author:
   avatar           : "/assets/images/speed.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "Australia"
-  email            : 
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
