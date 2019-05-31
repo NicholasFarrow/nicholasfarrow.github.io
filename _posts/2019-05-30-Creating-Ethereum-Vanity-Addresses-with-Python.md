@@ -3,8 +3,8 @@ layout: posts
 title: "Creating Ethereum Vanity Addresses with Python [0x0000]"
 author_profile: true
 #image: "/assets/images/ethVanTeaser.png"
-header:
-  image: "/assets/images/ethVanTeaser.png"
+#header:
+image: "/assets/images/ethVanTeaser.png"
 ---
 
 We wish to be able to create ethereum vanity addresses like `0xda66666666c3a809ADA79D93114a3662476cC0` through the only option possible, brute force.
