@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Printing A Star Wars MODT in Terminal With Bash [towel.blinkenlights.nl]"
+title: "Printing a Star Wars MODT in Terminal with Bash [towel.blinkenlights.nl]"
 author_profile: true
 last_modified_at: 2019-06-06T16:20:02-05:00
 date: 2019-06-06
