@@ -25,7 +25,7 @@ We pipe the output of telnet into a command `sed` which allows us to perform a r
 $ telnet towel.blinkenlights.nl | sed -e 's/^[\[H/Z/g'
 ~~~
 (`Z` conveniently does not appear elsewhere in the animation)
-Next instead of spamming this annimation to the terminal we want to use `tee` to output it to a file  `mainScenes`:
+Next instead of spamming this animation to the terminal we want to use `tee` to output it to a file  `mainScenes`:
 ~~~shell
 $ telnet towel.blinkenlights.nl | sed -e 's/^[\[H/Z/g' | tee mainScenes
 ~~~
@@ -65,7 +65,7 @@ $ cat mainScenes
 ~~~
 We can see each frame is now seperated by character `Z`.
 
-Now we wish to load this file `mainScenes` and save each frame to own file. We open the file to a variabe `$SCENEDATA` :
+Now we wish to load this file `mainScenes` and save each frame to own file. We open the file into a variable `$SCENEDATA` :
 ~~~shell
 SCENEDATA=$(<"mainScenes")
 ~~~
