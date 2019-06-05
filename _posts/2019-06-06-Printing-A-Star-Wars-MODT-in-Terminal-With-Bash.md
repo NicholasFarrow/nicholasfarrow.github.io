@@ -142,10 +142,12 @@ fi
 echo "$(<$(ls "$SCENEDIR/s_"* | shuf -n 1))"                                                                      
 ~~~
 
-Save it somewhere, like in `~/.config`, and then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
+Save this script as something like in `~/.config/starshell.sh`, and then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
 ~~~shell
 source  ~/.config/starshell.sh
 ~~~
 Now every time we open a new terminal a nice scene is displayed! (majority of scenes are quite nice).
+
+I would love for someone to try this on Mac OSX, let me know if it works out!
 
 ![Terminal Examples](/assets/images/starshell2.png)
