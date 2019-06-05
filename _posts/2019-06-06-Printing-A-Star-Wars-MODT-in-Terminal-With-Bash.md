@@ -142,7 +142,7 @@ fi
 echo "$(<$(ls "$SCENEDIR/s_"* | shuf -n 1))"                                                                      
 ~~~
 
-Save this script as something like in `~/.config/starshell.sh`, and then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
+Save this script in your home directory like `~/.config/starshell.sh`, and make it excecutable with `chmod -x ~/.config/starshell.sh`. If you a scene automatically printed each time you open a terminal then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
 ~~~shell
 source  ~/.config/starshell.sh
 ~~~
@@ -151,3 +151,8 @@ Now every time we open a new terminal a nice scene is displayed! (majority of sc
 I would love for someone to try this on Mac OSX, let me know if it works out!
 
 ![Terminal Examples](/assets/images/starshell2.png)
+
+Or alternatively we can print out a new scene by typing:
+~~~shell
+~/.config/starshell.sh
+~~~
