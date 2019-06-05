@@ -9,7 +9,7 @@ header:
   og_image: "/assets/images/starshell.png"
 ---
 
-Through telnet we are able to watch a 17 minute [ASCII animation of Star Wars IV.]([https://www.asciimation.co.nz/](https://www.asciimation.co.nz/))
+Through telnet we are able to watch a 17 minute [ASCII animation of Star Wars IV.](https://www.asciimation.co.nz/)
 
 We can watch by typing into our terminal:
 ~~~shell
