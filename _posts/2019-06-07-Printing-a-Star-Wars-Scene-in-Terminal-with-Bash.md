@@ -5,8 +5,14 @@ author_profile: true
 last_modified_at: 2019-06-07T16:20:02-05:00
 date: 2019-06-07
 header:
-  image: "/assets/images/starshell.png"
+  teaser: "/assets/images/starshell.png"
   og_image: "/assets/images/starshell.png"
+layout: single
+author_profile: true
+read_time: true
+comments: # true
+share: true
+related: true
 ---
 You may remember being able to watch a 17 minute [ASCII animation of Star Wars IV](https://www.asciimation.co.nz/) in terminal, from ~15 years ago (I remember watching it on my primary school's library computers).
 

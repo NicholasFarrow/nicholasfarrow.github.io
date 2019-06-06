@@ -5,9 +5,16 @@ author_profile: true
 last_modified_at: 2019-05-30T16:20:02-05:00
 date: 2019-05-30
 header:
+  teaser: "/assets/images/ethVanTeaser.png"
   og_image: "/assets/images/ethVanTeaser.png"
 #header:
 #image: "/assets/images/aliciaandi.jpg"
+layout: single
+author_profile: true
+read_time: true
+comments: # true
+share: true
+related: true
 ---
 
 We wish to be able to create ethereum vanity addresses like `0xda66666666c3a809ADA79D93114a3662476cC0` through the only option possible, brute force.
