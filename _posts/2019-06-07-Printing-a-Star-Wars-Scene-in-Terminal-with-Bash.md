@@ -15,6 +15,8 @@ Well over a decade later we can still watch it using telnet. By typing into our 
 $ telnet towel.blinkenlights.nl
 ~~~
 
+![StarWars Example](/assets/images/starshell4.png)
+
 We would like to write a bash script which on the first execution saves each frame of the animation to a file, and upon subsequent excecutions, print a random frame to the terminal.
 
 First we need to download each frame of the ASCII Star Wars animation. Each frame is separated by the character sequence `^[[H`.
