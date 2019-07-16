@@ -1,9 +1,12 @@
-# main links
+#main links
 main:
   - title: "About Me"
     url: /about/
   - title: "Résumé"
     url: /assets/Nicholas_Farrow_Resume__web_edition_.pdf
+  - title: "Misc"
+    url: /Misc/
+
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
