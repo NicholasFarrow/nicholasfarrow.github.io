@@ -15,6 +15,7 @@ share: true
 related: true
 ---
 We can create this amazing HD animation with just a few lines of python code!
+
 ![moon gif](/assets/images/post3/animation.gif)
 
 We can check what the moon will look like at a given day and time using [this NASA visualisation](https://svs.gsfc.nasa.gov/4442).
