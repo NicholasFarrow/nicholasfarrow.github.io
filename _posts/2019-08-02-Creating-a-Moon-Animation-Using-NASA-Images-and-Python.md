@@ -14,9 +14,11 @@ comments: # true
 share: true
 related: true
 ---
-We can create this amazing HD animation with just a few lines of python code!
+We can create a video of the moon with just a few lines of python code!
 
-![moon gif](/assets/images/post3/animation.gif)
+<video preload="auto" autoplay="autoplay" loop="loop" style="width: 600px; height: 600px;">
+    <source src="http://i.imgur.com/29P2k8Z.mp4" type="video/mp4"></source>
+</video>
 
 We can check what the moon will look like at a given day and time using [this NASA visualisation](https://svs.gsfc.nasa.gov/4442).
 ![screenshot1](/assets/images/post3/screenshot_1.png)
@@ -91,7 +93,12 @@ Finally, we can create a gif using:
 imageio.mimsave('moonAnimation.gif', images)
 ~~~
 
-![moon gif](/assets/images/post3/animation.gif)
+Or we can create an HD video using `ffmpeg`:
+~~~shell
+$ ffmpeg -r 25 -i images/%04d.jpg -vb 20M moon.mp4 
+~~~
+
+<iframe width="777" height="720" src="https://www.youtube.com/embed/Cz1ED7FW4dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [An old implimentation of the full code can be found on my Github.](https://github.com/NicholasFarrow/moonPhase/)
 
