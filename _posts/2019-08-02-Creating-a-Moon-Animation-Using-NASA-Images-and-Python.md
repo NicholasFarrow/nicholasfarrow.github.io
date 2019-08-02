@@ -14,28 +14,29 @@ comments: # true
 share: true
 related: true
 ---
-We can create a video of the moon with just a few lines of python code!
+Here's how we can create a video of the moon in just a few lines of python code!
 
 <video preload="auto" autoplay="autoplay" loop="loop" style="width: 600px; height: 600px;">
     <source src="http://i.imgur.com/29P2k8Z.mp4" type="video/mp4"></source>
 </video>
 
-We can check what the moon will look like at a given day and time using [this NASA visualisation](https://svs.gsfc.nasa.gov/4442).
+
+Using this [NASA visualisation](https://svs.gsfc.nasa.gov/4442) we can check what the moon will look like on a given day.
 ![screenshot1](/assets/images/post3/screenshot_1.png)
 
-By opening the image in a new tab, we see the image is stored with the path:
+By opening the output image in a new tab, we see the image is located at path:
 `https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.5108.jpg`
 
 Replacing the last number in the URL (5108) with another number, 0001, we can view the first image:
 ![0001](https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.0001.jpg)
 
-We want to write some python which downloads and saves one of these images. We can store the URL as a string:
+We want to write some python which downloads and saves one of these images. First, we can store the URL as a string:
 ~~~python
 imageNumber = "0001"
 URL = "https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.{}.jpg".format(imageNumber)
 ~~~
 
-We can use the `urllib` module to download this image to a folder we have created `out`.
+Now we can use the `urllib` module to download this image to a folder we have created `out`.
 ~~~python
 import urllib.request as request
 request.urlretrieve(URL, 'out/image0001.jpg')
@@ -49,10 +50,11 @@ def getImage(imageNumber, directory):
     request.urlretrieve(URL, saveName)
     return
 ~~~
-Now we can easily download image #0999 into folder `out` with `getImage("0999", 'out/')`.
+Now we can easily download image `0999` into folder `out` with `getImage("0999", 'out/')`.
 
-We wish to download all 8761 images to use in creating an animation. Before the downloading, first we write a small function which assists with the '0001' formatting style (moon.1.jpg does not exist!). 
-We want a function which takes an integer input `n`, and then adds some leading `0s`. The number of zeros required is equal to 4 minus the length of the number as a string i.e `4 - len(str(n))`.
+We wish to download all 8761 images to create a video with high frames per second. Before the downloading, first we write a small function which assists with the '0001' formatting style (moon.1.jpg does not exist!). 
+
+We want a function which takes an integer input `n`, and then adds some leading `0s`. The number of zeros required is equal to 4 minus the number of digits, the length of the number as a string i.e `4 - len(str(n))`.
 
 ~~~python
 def addZeros(imageNumber):
@@ -60,7 +62,7 @@ def addZeros(imageNumber):
     return "0" * numAdd + str(imageNumber) 
 ~~~
 
-Now we can download image #3 using getImage(addZeros(3), 'out/').
+Now we can download image 3 using `getImage(addZeros(3), 'out/')`.
 
 From here we can download all 8761 images:
 ~~~python
