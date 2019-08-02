@@ -38,7 +38,7 @@ URL = "https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_
 
 Now we can use the `urllib` module to download this image to a folder we have created `out`.
 ~~~python
-import urllib.request as request
+from urllib import request
 request.urlretrieve(URL, 'out/image0001.jpg')
 ~~~
 
