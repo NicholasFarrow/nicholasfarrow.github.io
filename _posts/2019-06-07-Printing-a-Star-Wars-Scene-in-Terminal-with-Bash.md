@@ -157,7 +157,7 @@ fi
 echo "$(<$(ls "$SCENEDIR/s_"* | shuf -n 1))"
 ~~~
 
-Save this script in your home directory like `~/.config/starshell.sh`, and make it excecutable with `chmod +x ~/.config/starshell.sh`. If you a scene automatically printed each time you open a terminal then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
+Save this script in your home directory like `~/.config/starshell.sh`, and make it excecutable with `chmod +x ~/.config/starshell.sh`. If you want a scene automatically displayed each time you open a terminal then in your `~/.bashrc` or  `~/.bash_profile` we add the line:
 ~~~shell
 source  ~/.config/starshell.sh
 ~~~
