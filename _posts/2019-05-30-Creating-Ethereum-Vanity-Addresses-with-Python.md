@@ -10,6 +10,7 @@ header:
 #header:
 #image: "/assets/images/aliciaandi.jpg"
 layout: single
+classes: wide
 author_profile: true
 read_time: true
 comments: # true

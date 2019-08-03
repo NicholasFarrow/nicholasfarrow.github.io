@@ -8,6 +8,7 @@ header:
   teaser: "/assets/images/starshell.png"
   og_image: "/assets/images/starshell.png"
 layout: single
+classes: wide
 author_profile: true
 read_time: true
 comments: # true

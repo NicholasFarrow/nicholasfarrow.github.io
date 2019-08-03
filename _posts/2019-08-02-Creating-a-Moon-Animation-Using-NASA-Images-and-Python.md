@@ -8,6 +8,7 @@ header:
   teaser: "/assets/images/post3/header.png"
   og_image: "/assets/images/post3/header.png"
 layout: single
+classes: wide
 author_profile: true
 read_time: true
 comments: # true
@@ -22,12 +23,14 @@ Here's how we can create a video of the moon in just a few lines of python code!
 
 
 Using this [NASA visualisation](https://svs.gsfc.nasa.gov/4442) we can check what the moon will look like on a given day.
+
 ![screenshot1](/assets/images/post3/screenshot_1.png)
 
 By opening the output image in a new tab, we see the image is located at path:
 `https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.5108.jpg`
 
 Replacing the last number in the URL (5108) with another number, 0001, we can view the first image:
+
 ![0001](https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.0001.jpg)
 
 We want to write some python which downloads and saves one of these images. First, we can store the URL as a string:
