@@ -17,6 +17,8 @@ related: true
 ---
 You may remember being able to watch a 17 minute [ASCII animation of Star Wars IV](https://www.asciimation.co.nz/) in terminal, from ~15 years ago (I remember watching it on my primary school's library computers).
 
+(You can download my MOTD bash script [here](https://github.com/NicholasFarrow/plugfiles/blob/master/starshell.sh))
+
 Well over a decade later we can still watch it using telnet. By typing into our terminal:
 ~~~shell
 $ telnet towel.blinkenlights.nl
