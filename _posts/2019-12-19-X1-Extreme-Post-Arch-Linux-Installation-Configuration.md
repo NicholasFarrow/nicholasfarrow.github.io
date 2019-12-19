@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Arch Linux Configuration for Lenovo X1-Extreme"
+title: "Arch Linux Configuration for Lenovo X1-Extreme (Gen 2)"
 author_profile: true
 last_modified_at: 2019-12-19T03:20:02-05:00
 date: 2019-12-19
@@ -17,7 +17,7 @@ related: true
 toc: true
 toc_label: Lenovo X1 Extreme Arch Settings
 ---
-I recently installed Arch on my new Lenovo X1 Extreme laptop. Here I document some of the intricacies of the installation. I will continue to update this as I progress with installing more features.
+I recently installed Arch on my new X1 Extreme Gen 2 laptop. Here I document some of the intricacies of the installation. I will continue to update this as I progress with installing more features.
 
 If you see anything wrong, please please tell me!
 
