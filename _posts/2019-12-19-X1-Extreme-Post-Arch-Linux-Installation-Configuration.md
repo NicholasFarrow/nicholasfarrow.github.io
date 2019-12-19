@@ -23,6 +23,8 @@ If you see anything wrong, please please tell me!
 
 I followed the [classic archwiki installation guide](https://wiki.archlinux.org/index.php/installation_guide).
 
+![desktop](/assets/images/laptop_desktop.png)
+
 ## Disk Partitions
 ~~~shell
 nick@graviton:~$ lsblk
