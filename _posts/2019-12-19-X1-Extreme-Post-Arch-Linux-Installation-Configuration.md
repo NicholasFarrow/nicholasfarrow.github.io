@@ -93,7 +93,7 @@ I can now switch to nvidia graphics using `optimus-manager --switch nvidia`, the
 
 
 ## Display Server xorg
-All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus manager`.
+All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus-manager`.
 
 ## Audio
 To get audio working on my non-root user, I had to add my user to the audio group with `sudo usermod -a -G audio nick`.I confirmed [ALSA](https://en.wikipedia.org/wiki/Alsamixer) is working with `speaker-test`. You might need to manually unmute Master in `alsamixer` with the m key.
