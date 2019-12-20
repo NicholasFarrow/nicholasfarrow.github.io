@@ -76,42 +76,24 @@ nick@graviton:~$ cat /boot/refind_linux.conf
 ~~~
 
 ## Graphics Card
-I chose to use [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) for my graphics driver/controller with bumblebee to switch between my GFX card and integrated graphics..Though I am still unsure whether this is working correctly.
+I chose to use [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) for my graphics driver/controller.. Though I am still unsure whether this is working correctly.
 
 ~~~shell
-nick@graviton:~$ cat /etc/optimus-manager/optimus-manager.conf
-[intel]
-driver=intel
-modeset=yes
+nick@graviton:~$ cat ~/.xinitrc
+xbindkeys
 
-[nvidia]
-modeset=yes
+# THESE ARE NEEDED FOR OPTIMUS TO FIND THE DISPLAY!
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
 
-[optimus]
-switching=bbswitch
+exec i3
 ~~~
-with `optirun glxgears` I get ~260fps compared to the usual `60fps`.
+
+I can now switch to nvidia graphics using `optimus-manager --switch nvidia`, then `prime-switch`, `xinit` and `prime-offload` once logged in. This will become more streamlined once I start using a desktop manager.
+
 
 ## Display Server xorg
-Post installation of xorg, `xinit` displayed a black screen with no mouse, due to some problems using the graphics driver.
-I am not certain which of the following fixed my issue: installing `bumblebee` and enabling `bumblebee.service`, installing `xf86-video-intel`, or editing the following:
-
-~~~shell
-nick@graviton:~$ cat /etc/X11/xorg.conf.d/20-intel.conf
-Section "Device"
-    Identifier "intelgpu0"
-    Driver "intel"
-EndSection
-~~~
-
-~~~shell
-nick@graviton:~$ cat /etc/bumblebee/xorg.conf.nvidia
-...
-Section "Screen"
-    Identifier "Screen0"
-    Device "DiscreteNVidia"
-EndSection
-~~~
+All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus manager`.
 
 ## Audio
 To get audio working on my non-root user, I had to add my user to the audio group with `sudo usermod -a -G audio nick`.I confirmed [ALSA](https://en.wikipedia.org/wiki/Alsamixer) is working with `speaker-test`. You might need to manually unmute Master in `alsamixer` with the m key.
