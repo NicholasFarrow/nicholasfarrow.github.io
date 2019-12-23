@@ -70,10 +70,13 @@ As this is a UEFI laptop, I am using [rEFInd](https://wiki.archlinux.org/index.p
 My rEFInd config looks like
 ~~~shell
 nick@graviton:~$ cat /boot/refind_linux.conf
-"Boot with default options"             "root=/dev/nvme0n1p5 rw add_efi_memmap"
+"Boot with default options"             "root=/dev/nvme0n1p5 resume=/dev/nvme0n1p6 rw add_efi_memmap"
 "Boot with fallback  initframs"         "root=/dev/nvme0n1p5 rw add_efi_memmap initrd=/boot/initramfs-linux-fallback.img"
 "Boot with default op"                  "root=/dev/nvme0n1p5 rw add_efi_memmap initrd=/initramfs-%v.img"
 ~~~
+
+## Hibernation
+I am able to hibernate using my swap partition by first adding `resume=/dev/nvme0n1p6` to my rEFInd config (above), and also you need to inlcude the `resume` hook in your `initramfs` (`/etc/mkinitcpio.conf`). (This [MUST be after](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Required_kernel_parameters) the `udev` hook!)
 
 ## Graphics Card
 I chose to use [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) for my graphics driver/controller.. Though I am still unsure whether this is working correctly.
