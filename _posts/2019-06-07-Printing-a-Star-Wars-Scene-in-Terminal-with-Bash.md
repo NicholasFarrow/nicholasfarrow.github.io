@@ -37,7 +37,7 @@ $ telnet towel.blinkenlights.nl | sed -e 's/.\[H/Z/g'
 (`Z` conveniently does not appear elsewhere in the animation)
 Next we want to use `tee` to output this to a file  `mainScenes`:
 ~~~shell
-$ telnet towel.blinkenlights.nl | sed -e 's/^[\[H/Z/g' | tee mainScenes
+$ telnet towel.blinkenlights.nl | sed -e 's/.\[H/Z/g' | tee mainScenes
 ~~~
 
 We sit through the whole animation as it saves each frame to the file.
