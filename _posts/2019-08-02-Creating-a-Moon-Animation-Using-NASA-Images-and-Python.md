@@ -67,6 +67,13 @@ def addZeros(imageNumber):
 
 Now we can download image 3 using `getImage(addZeros(3), 'out/')`.
 
+Or, more easily, we can use Python's string formatting:
+~~~python
+def addZeros(imageNumber):
+    return '{:04d}'.format(imageNumber)
+~~~
+which will add leading zeros up to 4 digits. (Thanks /u/flutefreak7)
+
 From here we can download all 8761 images:
 ~~~python
 for imageNumber in range(1, 8761):
