@@ -78,7 +78,7 @@ nick@graviton:~$ cat /boot/refind_linux.conf
 ## Hibernation
 I am able to hibernate using my swap partition by first adding `resume=/dev/nvme0n1p6` to my rEFInd config (above), and also you need to inlcude the `resume` hook in your `initramfs` (`/etc/mkinitcpio.conf`). (This [MUST be after](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Required_kernel_parameters) the `udev` hook!)
 
-## Graphics Card
+## Graphics
 I chose to use [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) for my graphics driver/controller.. Though I am still unsure whether this is working correctly.
 
 ~~~shell
@@ -94,6 +94,7 @@ exec i3
 
 I can now switch to nvidia graphics using `optimus-manager --switch nvidia`, then `prime-switch`, `xinit` and `prime-offload` once logged in. This will become more streamlined once I start using a desktop manager.
 
+After switching to nvidia grahpics, the display will be outputted to any plugged in HDMI monitor. To extend my screen for another i3 desktop I use `xrandr --output HDMI-0 --auto --right-of eDP-1-1`.
 
 ## Display Server xorg
 All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus-manager`.
