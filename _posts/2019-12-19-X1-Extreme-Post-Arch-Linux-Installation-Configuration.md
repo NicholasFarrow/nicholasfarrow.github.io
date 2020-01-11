@@ -46,7 +46,7 @@ I opted to create three linux partitions:
 
 I am dual booting with Windows, and hence have a 182G Windows partition on `nvme0n1p3`.
 
-## Partition Mounting
+### Partition Mounting
 ~~~shell
 nick@graviton:~$ cat /etc/fstab
 # /dev/nvme0n1p5
@@ -74,6 +74,7 @@ nick@graviton:~$ cat /boot/refind_linux.conf
 "Boot with fallback  initframs"         "root=/dev/nvme0n1p5 rw add_efi_memmap initrd=/boot/initramfs-linux-fallback.img"
 "Boot with default op"                  "root=/dev/nvme0n1p5 rw add_efi_memmap initrd=/initramfs-%v.img"
 ~~~
+I am using [this minimal refind theme](https://github.com/bobafetthotmail/refind-theme-regular).
 
 ## Hibernation
 I am able to hibernate using my swap partition by first adding `resume=/dev/nvme0n1p6` to my rEFInd config (above), and also you need to inlcude the `resume` hook in your `initramfs` (`/etc/mkinitcpio.conf`). (This [MUST be after](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Required_kernel_parameters) the `udev` hook!)
@@ -92,11 +93,33 @@ xrandr --auto
 exec i3
 ~~~
 
-I can now switch to nvidia graphics using `optimus-manager --switch nvidia`, then `prime-switch`, `xinit` and `prime-offload` once logged in. This will become more streamlined once I start using a desktop manager.
+I can now switch to nvidia graphics using `optimus-manager --switch nvidia`, then `sudo prime-switch`, `xinit` and `prime-offload` once logged in. This will become more streamlined once I start using a desktop manager.
 
-After switching to nvidia grahpics, the display will be outputted to any plugged in HDMI monitor. To extend my screen for another i3 desktop I use `xrandr --output HDMI-0 --auto --right-of eDP-1-1`.
+### Powerdown GPU
+Following the Gen1 [recommended optimus-manager config](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Extreme), I get quite a good battery life with this optimus configuration:
+~~~shell
+nick@graviton:~$ cat /etc/optimus-manager/optimus-manager.conf
+[intel]
+DRI=3
+driver=intel
+modeset=yes
 
-## Display Server xorg
+[nvidia]
+PAT=yes
+ignore_abi=no
+modeset=yes
+
+[optimus]
+pci_power_control=no
+pci_remove=no
+pci_reset=function_level
+switching=bbswitch
+~~~
+
+### HDMI (External Display)
+After switching to nvidia grahpics (see above), the display will be outputted to any plugged in HDMI monitor. To extend my screen for another i3 desktop I use `xrandr --output HDMI-0 --auto --right-of eDP-1-1`.
+
+### Display Server xorg
 All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus-manager`.
 
 ## Audio
@@ -127,7 +150,13 @@ nick@graviton:~$ cat ~/.xbindkeysrc
 "xbacklight -dec 5"
         XF86MonBrightnessDown
 ~~~
-Remember to update this file with `xrdb ~/.Xresources`.
+Remember to update this file with `xrdb ~/.xbindkeysrc`.
+
+If using `optimus-manager`, then add the following to `/etc/optimus-manager/xorg-intel.conf`:
+~~~shell
+Option "Backlight" "intel_backlight"
+~~~
+This tells the xorg server what system backlight to use when using intel graphics.
 
 ## Trackpad Scrolling
 In your `~/.bashrc` put
