@@ -4,7 +4,8 @@ author_profile: true
 header:
   image: "/assets/images/new.png"
 related: true
-#layout: single
+classes: wide
+layout: single
 ---
 
 My name is Nicholas Farrow, I have recently:
