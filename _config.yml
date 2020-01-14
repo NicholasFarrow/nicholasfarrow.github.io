@@ -115,9 +115,6 @@ author:
   location         : "Australia"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:nicholas.w.farrow@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,7 +130,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://instagram.com/farrow_"
-
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:nicholas.w.farrow@gmail.com
 # Site Footer
 footer:
   links:

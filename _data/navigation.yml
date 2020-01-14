@@ -5,7 +5,7 @@ main:
 # - title: "Sale"
 #    url: /Sale/
   - title: "Résumé"
-    url: /assets/Nicholas_Farrow_Resume__web_edition_.pdf
+    url: /assets/resume.pdf
   - title: "Misc"
     url: /Misc/
 
