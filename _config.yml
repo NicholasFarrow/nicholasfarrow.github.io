@@ -31,9 +31,9 @@ masthead_title           : "Nick" # overrides the website title displayed in the
 # breadcrumbs            : true # true, false (default)
 words_per_minute         : 125
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "nicholasfarrow" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -296,3 +296,4 @@ defaults:
       comments: # true
       share: true
       related: true
+
