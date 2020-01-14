@@ -20,7 +20,7 @@ Here's how we can create a video of the moon in just a few lines of python code!
 <video preload="auto" autoplay="autoplay" loop="loop" style="width: 600px; height: 600px;">
     <source src="http://i.imgur.com/29P2k8Z.mp4" type="video/mp4"></source>
 </video>
-
+[Or you can check out the full code on my Github.](https://github.com/NicholasFarrow/moonPhase/)
 
 Using this [NASA visualisation](https://svs.gsfc.nasa.gov/4442) we can check what the moon will look like on a given day.
 
@@ -112,5 +112,5 @@ $ ffmpeg -r 25 -i images/%04d.jpg -vb 20M moon.mp4
 
 <iframe width="777" height="720" src="https://www.youtube.com/embed/Cz1ED7FW4dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[An old implimentation of the full code can be found on my Github.](https://github.com/NicholasFarrow/moonPhase/)
+[Check out the full code on my Github.](https://github.com/NicholasFarrow/moonPhase/)
 
