@@ -118,7 +118,7 @@ switching=bbswitch
 ~~~
 
 ### HDMI (External Display)
-After switching to nvidia grahpics (see above), the display will be outputted to any plugged in HDMI monitor. To extend my screen for another i3 desktop I use `xrandr --output HDMI-0 --auto --right-of eDP-1-1`.
+After switching to nvidia graphics (see above), the display will be outputted to any plugged in HDMI monitor. To extend my screen for another i3 desktop I use `xrandr --output HDMI-0 --auto --right-of eDP-1-1`.
 
 ### Display Server xorg
 All my xorg configs in `/etc/X11/xorg.conf.d/` are now controlled by `optimus-manager`.
@@ -130,18 +130,23 @@ To get audio working on my non-root user, I had to add my user to the audio grou
 As I use function F1-F12 keys often in i3, I generally keep FnLock ON (Fn+Esc).
 ~~~shell
 nick@graviton:~$ cat ~/.xbindkeysrc
-#increase volume
+# Increase volume
 "amixer set Master 5%+"
         XF86AudioRaiseVolume
 
-#decrease volume
+# Decrease volume
 "amixer set Master 5%-"
         XF86AudioLowerVolume
 
-#mute volume
+# Mute volume
 #"amixer set Master toggle"
 "pactl set-sink-mute 0 toggle"
         XF86AudioMute
+
+# Toggle microphone
+"amixer set Capture toggle"
+        XF86AudioMicMute
+
 
 # Increase brightness
 "xbacklight -inc 5"
@@ -151,7 +156,6 @@ nick@graviton:~$ cat ~/.xbindkeysrc
 "xbacklight -dec 5"
         XF86MonBrightnessDown
 ~~~
-Remember to update this file with `xrdb ~/.xbindkeysrc`.
 
 If using `optimus-manager`, then add the following to `/etc/optimus-manager/xorg-intel.conf`:
 ~~~shell
