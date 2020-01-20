@@ -28,7 +28,9 @@ Early last year I leapt into Linux. Motivated by beautiful desktops, and customi
 
 **Note:** While I have 'experienced' Linux for a few years on Ubuntu & Backtrack 5, I never really ventured further than the default desktop (GNOME) and changing terminal colours.
 
-# i3-gaps
+The following setup definitely works on Ubuntu, but it and other distros may require alternate installation proceedures.
+
+# i3-gaps (tiling window manager)
 `i3-gaps` is a fork of the tiling window manager `i3`. Compared to standard window managers, tiling allows for efficient maneuvering of split windows and is almost entirely controlled via the keyboard.
 
 The 'gaps' means that tiled windows can have controllable distance between them, as well as a gap border surrounding the outside of the tiles. I personally use [rounded i3-gaps](https://github.com/resloved/i3) which has nice rounded corners. 
@@ -40,10 +42,11 @@ cd i3-gaps/
 make
 sudo make install
 ~~~
+Then add `exec i3` to your `~/.xinitrc`.
 
 [See here](https://www.youtube.com/watch?v=GKviflL9XeI) for a good introductory video on navigating `i3` using the keyboard. Also, see my [i3 config](https://github.com/NicholasFarrow/plugfiles/blob/arch-x1/.config/i3/config) which you should install in `~/.config/i3/config` and customise.
 
-# compton (with blur)
+# Compton (transparency & blur)
 Compton is a compositor which composits windows into an offscreen buffer before writing to the display memory. This allows for numerous effects, particularly transparency and blurring.
 
 I use [tryone's compton fork](https://github.com/tryone144/compton) which includes a visually pleasing *kawase blur*, making text easier to read on transparent windows.
@@ -61,13 +64,13 @@ and I run on startup via my `i3` config using `exec_always --no-startup-id compt
 
 Checkout `~/.config/compton.conf` for endless configuration. For `i3` I like setting `inactive-opacity = 0.95;` so that **EVERY** window will become very slightly transparent when innactive. This makes it easier to observe the active window.
 
-# wal
+# wal (change background and colours)
 `wal -i ~/Pictures/Wallpapers/ --saturate 0.3 -l` is likely my most used command (aliased to `cbs`). It chooses a random desktop background from a folder, samples a colour palette from the dominant colours in the image, and then applies the colours system-wide. I have found that this saturation and `-l` for lightmode creates the best colour palette with high text readability.
 
 ![wal gif](/assets/images/waldopamine.gif)
 
 
-# st
+# st (terminal)
 I am using [Luke Smith's fork](https://github.com/LukeSmithxyz/st) of the suckless simple terminal (st) which has some really nice features such as scrollback, font-size hotkeys, good text copy/paste.
 
 To install:
