@@ -2,8 +2,8 @@
 layout: posts
 title: "Making Linux a Deep Fryer for Dopamine Receptors"
 author_profile: true
-last_modified_at: 2019-12-19T03:20:02-05:00
-date: 2019-12-19
+last_modified_at: 2020-01-20T03:20:02-05:00
+date: 2020-01-20
 header:
   teaser: "/assets/images/blurHeader.png"
   og_image: "/assets/images/blurHeader.png"
