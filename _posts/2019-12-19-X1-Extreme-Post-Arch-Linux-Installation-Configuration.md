@@ -18,9 +18,9 @@ toc: true
 toc_label: Lenovo X1 Extreme Arch Settings
 comments: true
 ---
-I recently installed Arch on my new X1 Extreme Gen 2 laptop. Here I document some of the intricacies of the installation. I will continue to update this as I progress with installing more features.
+I recently installed Arch on my new X1 Extreme Gen 2 laptop. Here I document some of the intricacies of the installation.
 
-If you see anything wrong, please please tell me!
+I will continue to update this as I progress with installing more features. If you see anything wrong, please please tell me!
 
 I followed the [classic archwiki installation guide](https://wiki.archlinux.org/index.php/installation_guide).
 
