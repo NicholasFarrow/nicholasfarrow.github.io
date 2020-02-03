@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: nicholasfarrow.com
-Token: b50bfcf8ab9b64c52ce29ae9f4d26247020be0214c81e88ff0e4045562543637
