@@ -70,7 +70,7 @@ Checkout `~/.config/compton.conf` for endless configuration. For `i3` I like set
 ![wal gif](/assets/images/waldopamine.gif)
 
 # polybar
-For a status bar I am now using `polybar`, which takes on the system colours from `wal` (not shown in other screenshots)! Not only does it look much prettier than `i3status` but it comes with some nice modular functions, while retaining the ability to include output custom scripts.
+For a status bar I am now using `polybar`, which takes on the system colours from `wal`! Not only does it look much prettier than `i3status` but it comes with some nice modular functions, while retaining the ability to include output custom scripts.
 
 Below is an image of my polybar. Left: custom crypto price tickers and VPN status. Right: volume, RAM usage, CPU usage, internet connection, CPU temperature, time (shows date when clicked), and a power button I have never actually used.
 
