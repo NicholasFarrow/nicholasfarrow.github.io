@@ -29,7 +29,9 @@ The total mass of GW190425 was inferred to be $$ 3.4^{+0.3}_{-0.1} M_{\odot} $$;
 ## Gravitational Waves
 Predicted by Albert Einstein in 1916, gravitational waves are radiated by accelerating objects. As a consequence, all orbits lose energy from the emission of this gravitational radiation, causing the distance and eccentricity of a binary system to decay over time. This leads to an **inspiral** where two compact objects (neutron stars or blackholes) become closer in an increasingly circular orbit. The closer the stars get, the faster their orbital velocities become and consequently the period of the orbit decreases, reflected in the gravitational waves as an increasing frequency. The crescendo of this orbital frequency is reflected in the gravitational wave frequency as a *chrip*. The *chirp* ends with a merger between the two compact objects, forming a supramassive neutron star or a black hole.
 
-![GW video](https://upload.wikimedia.org/wikipedia/commons/transcoded/8/85/Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm/Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm.480p.vp9.webm)
+<video width="800" height="450" controls="controls">
+  <source src="/assets/images/BBH.webm" type="video/webm">
+</video>
 *Coalescing black holes, source: LIGO SXS Project.*
 
 
