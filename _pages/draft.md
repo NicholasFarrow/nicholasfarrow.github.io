@@ -4,10 +4,14 @@ title: "The Origin of GW190425"
 author_profile: true
 last_modified_at: 2020-04-19T03:20:02-05:00
 date: 2020-04-19
+excerpt: "GW190425 is the second detection of gravitational waves originating from a double neutron star inspiral, and was the topic of my honours thesis and paper."
 header:
   teaser: "/assets/images/GWpreview.png"
   og_image: "/assets/images/GWprieview.png"
-excerpt: "GW190425 is the second detection of gravitational waves originating from a double neutron star inspiral, and was the topic of my honours thesis and paper."
+  overlay_image: "/assets/images/GW190425.jpg"
+  caption: "GW190425 Illustration: [Aurore Simonnet](http://auroresimonnet.com/)"
+  show_overlay_excerpt: false
+
 layout: single
 classes: wide
 author_profile: true
@@ -16,7 +20,7 @@ comments: # true
 share: true
 related: true
 permalink: /draft/
-toc: true
+toc: false
 toc_label: "Contents"
 comments: true
 ---
@@ -33,7 +37,7 @@ First proposed by Henri Poincaré in 1905, gravitational waves are radiated by a
 <iframe width="800" height="450" src="https://www.youtube.com/embed/yYCnp_42mgY" frameborder="0" allowfullscreen></iframe>
 *Coalescing neutron stars in a simulation of GW190425*, **CoRe collaboration**
 
-The closer the stars get, the faster their orbital velocities become as they circle around eachother. The orbital period (time taken for one revolution) decreases; reflected in the gravitational waves as an increasing frequency. The crescendo of the gravitational wave frequency is known as a *chirp*. The *chirp* ends with a merger between the two neutron stars, forming a supramassive neutron star or a black hole.
+The closer the stars get, the faster their orbital velocities become as they circle around each other. The orbital period (time taken for one revolution) decreases; reflected in the gravitational waves as an increasing frequency. The crescendo of the gravitational wave frequency is known as a *chirp*. The *chirp* ends with a merger between the two neutron stars, forming a supramassive neutron star or a black hole.
 
 <audio controls>
 	<source src="/assets/GW150914_H1_whitenbp.wav" type="audio/wav">
@@ -85,10 +89,10 @@ Eccentricity, $$e$$, describes the ellipticity of the orbit where $$e=0$$ is a c
 To test our hypothesis, we measured the eccentricity of GW190425 using the LIGO/Virgo gravitational wave data so that we could compare it to expected eccentricities of simulated unstable case BB binaries.
 
 ![Results](/assets/images/pofe_v_e.png){: style="display: block;"}
-*The main plot from our paper, showing probabilities of very small eccentricities ($$\log_{10}$$ scale) from the GW190425 signal and of simulated unstable case BB mass transfer binaries.*
+*The main plot from our paper, showing probabilities of very small eccentricities ($$\log_{10}$$ scale) from the GW190425 signal and of simulated unstable case BB mass transfer binaries. Shown at a frequency of 10Hz.*
 
-It may be possible that GW190425 formed through unstable case BB mass transfer. However we were not able to distinguish the small eccentricities of GW190425 as the binary had circularised to e<0.007 at 10Hz by the time the binary was detectable by Advanced LIGO/Virgo. Though we do find that future detectors, such as the space based [LISA](https://en.wikipedia.org/wiki/Laser_Interferometer_Space_Antenna) mission will be able to detect gravitational waves at lower freqeuencies, allowing us to resolve eccentricities that will allow us to distinguish unstable case BB mass transfer binaries.
+It is possible that GW190425 formed through unstable case BB mass transfer. However we were not able to distinguish the small eccentricity of GW190425 as binaries that form through this channel have circularised to $$e<10^{-4}$$ by the time they're detectable by Advanced LIGO/Virgo (a minimum frequency of 20Hz). Though we do find that future detectors which are able to detect gravitational waves at lower frequencies, such as the [Cosmic Explorer](https://cosmicexplorer.org/) and the space based [LISA](https://en.wikipedia.org/wiki/Laser_Interferometer_Space_Antenna) mission, will enable us to resolve these eccentricities and allow us to distinguish unstable case BB mass transfer binaries.
 
-In my next post I hope to cover: some technical details of our method from Isobel Romero-Shaw, who led our team in measuring the eccentricity of GW190425; how we simulated eccentricities of unstable case BB mass transfer binaries; and some further prospects in measuring the eccentricity of merging neutron stars.
+In a later post I hope to cover: some technical details of our method from Isobel Romero-Shaw, who led our team in measuring the eccentricity of GW190425; how we simulated eccentricities of unstable case BB mass transfer binaries; and some further prospects in measuring the eccentricity of merging neutron stars.
 
 For more details and citations, see my [honours thesis](/assets/thesis.pdf) and [our paper](https://arxiv.org/abs/2001.06492) that is currently awaiting publication.
