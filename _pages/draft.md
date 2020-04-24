@@ -24,10 +24,10 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
-GW190425 was the topic of my [honours thesis](/assets/thesis.pdf) and a [subsequent paper](https://arxiv.org/abs/2001.06492) that our team (Isobel Romero-Shaw, myself, Simon Stevenson, Eric Thrane, Xing-Jiang Zhu) put together; currently awaiting publication.
+GW190425 was the topic of my [honours thesis](/assets/thesis.pdf) and a [subsequent paper](https://arxiv.org/abs/2001.06492) by our team: Isobel Romero-Shaw, myself, Simon Stevenson, Eric Thrane, and Xing-Jiang Zhu; currently awaiting publication.
 
 # Gravitational Waves from GW190425
-First proposed by Henri Poincaré in 1905 and predicted in Albert Einstein's general theory of relativity, gravitational waves are emitted by accelerating objects. Two stars orbiting one-another in a **binary system** will lose energy from the emission of gravitational waves, causing the separation between the two stars in the binary to decay over time. Additionally, if the binary is in a non-circular eliptical orbit, known as an **eccentric orbit**, the orbits will gradually become more circular over time. For two sufficiently close and dense **compact objects**, such as neutron stars or black holes, this leads to an **inspiral** where the stars become closer in an increasingly circular orbit. 
+Predicted in Albert Einstein's general theory of relativity, gravitational waves are emitted by accelerating objects. Two stars orbiting one-another in a **binary system** will lose energy from the emission of gravitational waves, causing the separation between the two stars in the binary to decay over time. Additionally, if the binary is in a non-circular eliptical orbit, known as an **eccentric orbit**, the orbits will gradually become more circular over time. For two sufficiently close and dense **compact objects**, such as neutron stars or black holes, this leads to an **inspiral** where the stars become closer in an increasingly circular orbit. 
 
 On the 25th of April 2019, Advanced LIGO/Virgo made the second detection of gravitational waves (GW) originating from a double neutron star (DNS) inspiral. Advanced LIGO/Virgo observes gravitational waves by measuring the stretching and squeezing of space as the waves pass over two perpendicular 4km long tunnels. The gravitational wave, [GW190425](https://www.ligo.org/detections/GW190425.php), is particularly interesting as it originated from an enormous double neutron star system.
 
