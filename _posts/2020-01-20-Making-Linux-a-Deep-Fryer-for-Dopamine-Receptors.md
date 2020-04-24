@@ -24,9 +24,7 @@ My current Linux setup (i3-gaps, compton, wal, st, + more).
 
 > **Make each program do one thing well.** *To do a new job, build afresh rather than complicate old programs by adding new "features".*	--[Douglas McIlroy, Bell Labs (1978)](https://en.wikipedia.org/wiki/Unix_philosophy)
 
-Early last year I leapt into Linux. Motivated by beautiful desktops, and customisation made easy thanks to the UNIX philosophy above, I have gradually synthesised an aesthetic and productive workflow on my systems. **I haven't used Windows since**.
-
-**Note:** While I have 'experienced' Linux for a few years on Ubuntu & Backtrack 5, I never really ventured further than the default desktop (GNOME) and changing terminal colours.
+Early last year I began to properly explore Linux. Motivated by beautiful desktops, and customisation made easy thanks to the UNIX philosophy above, I have gradually synthesised an aesthetic and productive workflow on my systems. I haven't really had a reason to use Windows since.
 
 The following setup definitely works on Ubuntu, but it and other distros may require alternate installation proceedures.
 

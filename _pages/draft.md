@@ -24,15 +24,14 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
-GW190425 was the topic of my [honours thesis](/assets/thesis.pdf) and our team's [subsequent paper](https://arxiv.org/abs/2001.06492) that is currently awaiting publication.
+GW190425 was the topic of my [honours thesis](/assets/thesis.pdf) and a [subsequent paper](https://arxiv.org/abs/2001.06492) that our team (Isobel Romero-Shaw, myself, Simon Stevenson, Eric Thrane, Xing-Jiang Zhu) put together; currently awaiting publication.
 
-# GW190425
-On the 25th of April 2019, Advanced LIGO/Virgo made the second detection of gravitational waves (GW) originating from a double neutron star (DNS) inspiral. These gravitational waves, [GW190425](https://www.ligo.org/detections/GW190425.php), is particularly interesting as it originated from an enormous double neutron star system.
+# Gravitational Waves from GW190425
+First proposed by Henri Poincaré in 1905 and predicted in Albert Einstein's general theory of relativity, gravitational waves are emitted by accelerating objects. Two stars orbiting one-another in a **binary system** will lose energy from the emission of gravitational waves, causing the separation between the two stars in the binary to decay over time. Additionally, if the binary is in a non-circular eliptical orbit, known as an **eccentric orbit**, the orbits will gradually become more circular over time. For two sufficiently close and dense **compact objects**, such as neutron stars or black holes, this leads to an **inspiral** where the stars become closer in an increasingly circular orbit. 
 
-The total mass of GW190425 was inferred to be $$ 3.4^{+0.3}_{-0.1} M_{\odot} $$; that is 3.4 times the mass of our sun whilst each star is roughly just ~$$10$$km across! The total mass of GW190425 is inconsistent with previously observed double neutron stars at a $$5\sigma$$ level, indicating that we may have just uncovered a new population.
+On the 25th of April 2019, Advanced LIGO/Virgo made the second detection of gravitational waves (GW) originating from a double neutron star (DNS) inspiral. Advanced LIGO/Virgo observes gravitational waves by measuring the stretching and squeezing of space as the waves pass over two perpendicular 4km long tunnels. The gravitational wave, [GW190425](https://www.ligo.org/detections/GW190425.php), is particularly interesting as it originated from an enormous double neutron star system.
 
-## Gravitational Waves
-First proposed by Henri Poincaré in 1905, gravitational waves are radiated by accelerating objects. As a consequence, orbiting binaries (like two stars/black holes) lose energy from the emission of gravitational radiation, causing the distance and eccentricity of the binary to decay over time. For two sufficiently close neutron stars this leads to an **inspiral** where the neutron stars become closer in an increasingly circular orbit. 
+The combined mass of GW190425 was inferred to be $$ 3.4^{+0.3}_{-0.1} M_{\odot} $$; that is 3.4 times the mass of our sun whilst each star is roughly just ~$$10$$km across! The total mass of GW190425 is inconsistent with previously observed double neutron stars at a $$5\sigma$$ level, indicating that we may have just uncovered a new population.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/yYCnp_42mgY" frameborder="0" allowfullscreen></iframe>
 *Coalescing neutron stars in a simulation of GW190425*, **CoRe collaboration**
@@ -49,24 +48,24 @@ The observation of such a massive neutron star binary points us towards one of t
 
 In the *dynamic formation* scenario, two compact objects (neutron stars/black holes) form individually in a dense stellar environment such as a globular cluster, a collection of stars orbiting the core of a galaxy. These two compact objects are later brought together via dynamical interactions to form a binary.
 
-In *isolated binary evolution*, two stars begin in an orbit where one of the stars begins to grow in size as it burns off the remainder of its hydrogen. The larger star may get too large and too close to the smaller star, causing its outer layer to be gravitationally pulled onto the smaller star and forms a *common envelope* of hydrogen which surrounds both stars. This *mass transfer* continues until the hydrogen layer of the larger star has been stripped off, leaving a helium star. Sometime later, this helium star will undergo a supernova explosion, collapsing into a neutron star. Later, the second star will also undergo a supernova and become a neutron star, resulting in a binary neutron star.
+In *isolated binary evolution*, two stars begin in an orbit where one of the stars begins to grow in size as it burns off the remainder of its hydrogen. The larger star may get too large and too close to the smaller star, causing its outer layer of hydrogen to be gravitationally pulled onto the smaller star, forming a *common envelope* of hydrogen that surrounds both stars. This *mass transfer* continues until the hydrogen layer of the larger star has been stripped off, leaving a helium star. Sometime later, this helium star will undergo a supernova explosion, collapsing into a neutron star. Later, the second star will also undergo a supernova and become a neutron star, leaving a binary neutron star.
 
-The implied merger rate from GW190425 is higher than we expect from the dynamical channel, and the total mass is difficult to explain through standard isolated binary evolution. Therefore neither scenario fits well for explaining the origin of GW190425.
+The implied detection rate from GW190425 is higher than we expect from the dynamical channel, and the total mass is difficult to explain through standard isolated binary evolution. Therefore neither scenario fits well for explaining the origin of GW190425.
 
 
 # Possible Explanation: Unstable Case BB Mass Transfer
 ![Panel AB](/assets/images/AB.png){: style="float: left; margin-right: 1em;"}
 *Illustration: Carl Knox*
 
-Unstable case BB mass transfer is a variation of isolated binary evolution. Following the standard scenario, a binary may consist of a primary neutron star and a high-mass Helium rich giant companion (Panel A). Unstable case BB mass transfer occurs when Helium is pulled off the smaller star, forming a *common envelope* which now engulfs the neutron star and a remaining carbon-oxygen core (Panel C).
+Unstable case BB mass transfer is a variation of isolated binary evolution. Following the standard scenario, a binary may consist of a primary neutron star with a high-mass Helium star companion (Panel A). Unstable case BB mass transfer occurs when Helium is pulled off the Heleium star onto the neutron star, forming a *common envelope* which now engulfs the neutron star and a remaining carbon-oxygen core (Panel C).
 
 ![Panel CD](/assets/images/CD.png){: style="float: right; margin-left: 1em;"}
-Friction in the common envelope transfers angular momentum from the neutron star and carbon-oxygen core to the surrounding helium, eventually ejecting the envelope leaving a tight binary orbit with an period of less than 1 hour (Panel D).
+Friction caused by the stars orbiting inside the common envelope transfers angular momentum to the surrounding helium, eventually ejecting the envelope leaving a tight binary orbit with an period of less than 1 hour (Panel D).
 
 
 ## Supernova Kicks
 ![Panel EF](/assets/images/EF.png){: style="float: left; margin-right: 1em;"}
-Sometime later the carbon oxygen core undergoes a supernova explosion (Panel E), collapsing into a second neutron star. During the supernova, the asymmetric distribution of mass in the collapse gives the neutron star a *kick*. This kick gives the star a boost in a random direction of its orbit, leading to an elongated orbit with significant eccentricity. 
+Sometime later the carbon oxygen core undergoes a supernova explosion (Panel E), collapsing into a second neutron star. During the supernova, the asymmetric distribution of mass in the collapse gives the neutron star a *kick*. This kick gives the star a boost in a random direction, leading to an elongated orbit with significant eccentricity.
 
 Generally, supernova kicks are thought to disrupt many binaries, providing the star with an orbital velocity greater than its escape velocity. But this is not the case for unstable case BB binaries due to the helium envelope leaving a tightly bound orbit that is more likely to remain bound after a kick.
 
@@ -78,9 +77,9 @@ Unstable case BB mass transfer is a great candidate for explaining the origin of
 3. Unstable case BB mass transfer binaries are thought to almost always survive the supernova kick due to their very tight orbit.
 
 # Searching for Signs of Eccentricity
-In [our recent paper](https://arxiv.org/abs/2001.06492), we propose that GW190425 may have formed as an isolated binary via unstable case BB mass transfer. Where the first common envelope left a binary consisting of a $$\sim1.4M_{\odot}$$ neutron star and a $$\sim4-5M_{\odot}$$ helium star with an orbital period of $$0.1-2$$ days. The unstable case BB mass transfer may have accreted $$\sim0.05-0.1M_{\odot}$$ of mass onto the first born neutron star during this second common envelope. The second supernova ejected $$\sim1M_{\odot}$$ leaving a $$\sim(1.4+2.0)M_{\odot}$$ DNS, likely with significant eccentricity as a result of the *kick*. 
+In [our recent paper](https://arxiv.org/abs/2001.06492), we propose that GW190425 may have formed as an isolated binary via unstable case BB mass transfer. Where the first common envelope left a binary consisting of a $$\sim1.4M_{\odot}$$ neutron star and a $$\sim4-5M_{\odot}$$ helium star with an orbital period of $$0.1-2$$ days. The unstable case BB mass transfer may have accreted $$\sim0.05-0.1M_{\odot}$$ of mass onto the first born neutron star during the second common envelope. The second supernova ejected $$\sim1M_{\odot}$$ of mass leaving a $$\sim(1.4+2.0)M_{\odot}$$ DNS, likely with significant eccentricity as a result of the *kick*. 
 
-Eccentricity, $$e$$, describes the ellipticity of the orbit where $$e=0$$ is a circular orbit and the orbit becomes increasingly elongated as $$e\rightarrow1$$.
+The eccentricity, $$e$$, describes the ellipticity of the orbit where $$e=0$$ is a circular orbit and the orbit becomes increasingly elongated as $$e\rightarrow1$$.
 
 ![Elliptical Orbit](/assets/images/Orbit.gif)
 
@@ -95,4 +94,4 @@ It is possible that GW190425 formed through unstable case BB mass transfer. Howe
 
 In a later post I hope to cover: some technical details of our method from Isobel Romero-Shaw, who led our team in measuring the eccentricity of GW190425; how we simulated eccentricities of unstable case BB mass transfer binaries; and some further prospects in measuring the eccentricity of merging neutron stars.
 
-For more details and citations, see my [honours thesis](/assets/thesis.pdf) and [our paper](https://arxiv.org/abs/2001.06492) that is currently awaiting publication.
+For more details and citations, see my [honours thesis](/assets/thesis.pdf) and the [paper](https://arxiv.org/abs/2001.06492) that our team (Isobel Romero-Shaw, myself, Simon Stevenson, Eric Thrane, Xing-Jiang Zhu) put together; currently awaiting publication.
