@@ -40,7 +40,7 @@ The closer the stars get, the faster their orbital velocities become as they cir
 <audio controls>
 	<source src="/assets/GW150914_H1_whitenbp.wav" type="audio/wav">
 </audio>
-*The sound of a chirp from two black holes colliding (GW150914 converted into sound waves)*, **LIGO**
+*The sound of a chirp from two black holes colliding (GW150914 converted into sound waves, headphones recommended)*, **LIGO**
 
 # 3.4 Times the Mass of our Sun?!
 The observation of such a massive neutron star binary points us towards one of the most exciting questions in astrophysics: **how do stellar binaries form and evolve?** Currently, there are two predominant formation scenarios for compact binaries, which not only includes binary neutron star formation but also binary black holes and neutron star-black hole binaries.
