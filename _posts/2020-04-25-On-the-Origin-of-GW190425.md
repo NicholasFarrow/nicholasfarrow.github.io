@@ -7,7 +7,7 @@ date: 2020-04-25
 excerpt: "GW190425 is the second detection of gravitational waves originating from a double neutron star inspiral, and was the topic of my honours thesis and paper."
 header:
   teaser: "/assets/images/GWpreview.png"
-  og_image: "/assets/images/GWprieview.png"
+  og_image: "/assets/images/GWpreview.png"
   overlay_image: "/assets/images/GW190425.jpg"
   caption: "GW190425 Illustration: [Aurore Simonnet](http://auroresimonnet.com/)"
   show_overlay_excerpt: false
