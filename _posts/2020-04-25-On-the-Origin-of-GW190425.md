@@ -19,7 +19,7 @@ read_time: true
 comments: # true
 share: true
 related: true
-toc: true
+toc: false
 toc_label: "Contents"
 comments: true
 ---
