@@ -19,8 +19,7 @@ read_time: true
 comments: # true
 share: true
 related: true
-permalink: /draft/
-toc: false
+toc: true
 toc_label: "Contents"
 comments: true
 ---
