@@ -2,8 +2,8 @@
 layout: posts
 title: "The Origin of GW190425"
 author_profile: true
-last_modified_at: 2020-04-19T03:20:02-05:00
-date: 2020-04-19
+last_modified_at: 2020-04-25T03:20:02-05:00
+date: 2020-04-25
 excerpt: "GW190425 is the second detection of gravitational waves originating from a double neutron star inspiral, and was the topic of my honours thesis and paper."
 header:
   teaser: "/assets/images/GWpreview.png"
