@@ -35,7 +35,7 @@ The combined mass of GW190425 was inferred to be $$ 3.4^{+0.3}_{-0.1} M_{\odot} 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/yYCnp_42mgY" frameborder="0" allowfullscreen></iframe>
 *Coalescing neutron stars in a simulation of GW190425*, **CoRe collaboration**
 
-The closer the stars get, the faster their orbital velocities become as they circle around each other. The orbital period (time taken for one revolution) decreases; reflected in the gravitational waves as an increasing frequency. The crescendo of the gravitational wave frequency is known as a *chirp*. The *chirp* ends with a merger between the two neutron stars, forming a supramassive neutron star or a black hole.
+The closer the stars get, the faster their orbital velocities become as they circle around each other. The orbital period (time taken for one revolution) decreases; reflected in the gravitational waves as an increasing frequency. The crescendo of the gravitational wave frequency is known as a **chirp**. The **chirp** ends with a merger between the two neutron stars, forming a supramassive neutron star or a black hole.
 
 <audio controls>
 	<source src="/assets/GW150914_H1_whitenbp.wav" type="audio/wav">
@@ -45,9 +45,9 @@ The closer the stars get, the faster their orbital velocities become as they cir
 # 3.4 Times the Mass of our Sun?!
 The observation of such a massive neutron star binary points us towards one of the most exciting questions in astrophysics: **how do stellar binaries form and evolve?** Currently, there are two predominant formation scenarios for compact binaries, which not only includes binary neutron star formation but also binary black holes and neutron star-black hole binaries.
 
-In the *dynamic formation* scenario, two compact objects (neutron stars/black holes) form individually in a dense stellar environment such as a globular cluster, a collection of stars orbiting the core of a galaxy. These two compact objects are later brought together via dynamical interactions to form a binary.
+In the **dynamic formation** scenario, two compact objects (neutron stars/black holes) form individually in a dense stellar environment such as a globular cluster, a collection of stars orbiting the core of a galaxy. These two compact objects are later brought together via dynamical interactions to form a binary.
 
-In *isolated binary evolution*, two stars begin in an orbit where one of the stars begins to grow in size as it burns off the remainder of its hydrogen. The larger star may get too large and too close to the smaller star, causing its outer layer of hydrogen to be gravitationally pulled onto the smaller star, forming a *common envelope* of hydrogen that surrounds both stars. This *mass transfer* continues until the hydrogen layer of the larger star has been stripped off, leaving a helium star. Sometime later, this helium star will undergo a supernova explosion, collapsing into a neutron star. Later, the second star will also undergo a supernova and become a neutron star, leaving a binary neutron star.
+In **isolated binary evolution**, two stars begin in an orbit where one of the stars begins to grow in size as it burns off the remainder of its hydrogen. The larger star may get too large and too close to the smaller star, causing its outer layer of hydrogen to be gravitationally pulled onto the smaller star, forming a **common envelope** of hydrogen that surrounds both stars. This **mass transfer** continues until the hydrogen layer of the larger star has been stripped off, leaving a helium star. Sometime later, this helium star will undergo a supernova explosion, collapsing into a neutron star. Later, the second star will also undergo a supernova and become a neutron star, leaving a binary neutron star.
 
 The implied detection rate from GW190425 is higher than we expect from the dynamical channel, and the total mass is difficult to explain through standard isolated binary evolution. Therefore neither scenario fits well for explaining the origin of GW190425.
 
@@ -56,7 +56,7 @@ The implied detection rate from GW190425 is higher than we expect from the dynam
 ![Panel AB](/assets/images/AB.png){: style="float: left; margin-right: 1em;"}
 *Illustration: Carl Knox*
 
-Unstable case BB mass transfer is a variation of isolated binary evolution. Following the standard scenario, a binary may consist of a primary neutron star with a high-mass Helium star companion (Panel A). Unstable case BB mass transfer occurs when Helium is pulled off the Heleium star onto the neutron star, forming a *common envelope* which now engulfs the neutron star and a remaining carbon-oxygen core (Panel C).
+Unstable case BB mass transfer is a variation of isolated binary evolution. Following the standard scenario, a binary may consist of a primary neutron star with a high-mass Helium star companion (Panel A). Unstable case BB mass transfer occurs when Helium is pulled off the Heleium star onto the neutron star, forming a **common envelope** which now engulfs the neutron star and a remaining carbon-oxygen core (Panel C).
 
 ![Panel CD](/assets/images/CD.png){: style="float: right; margin-left: 1em;"}
 Friction caused by the stars orbiting inside the common envelope transfers angular momentum to the surrounding helium, eventually ejecting the envelope leaving a tight binary orbit with an period of less than 1 hour (Panel D).
@@ -64,7 +64,7 @@ Friction caused by the stars orbiting inside the common envelope transfers angul
 
 ## Supernova Kicks
 ![Panel EF](/assets/images/EF.png){: style="float: left; margin-right: 1em;"}
-Sometime later the carbon oxygen core undergoes a supernova explosion (Panel E), collapsing into a second neutron star. During the supernova, the asymmetric distribution of mass in the collapse gives the neutron star a *kick*. This kick gives the star a boost in a random direction, leading to an elongated orbit with significant eccentricity.
+Sometime later the carbon oxygen core undergoes a supernova explosion (Panel E), collapsing into a second neutron star. During the supernova, the asymmetric distribution of mass in the collapse gives the neutron star a **kick**. This kick gives the star a boost in a random direction, leading to an elongated orbit with significant eccentricity.
 
 Generally, supernova kicks are thought to disrupt many binaries, providing the star with an orbital velocity greater than its escape velocity. But this is not the case for unstable case BB binaries due to the helium envelope leaving a tightly bound orbit that is more likely to remain bound after a kick.
 
@@ -76,7 +76,7 @@ Unstable case BB mass transfer is a great candidate for explaining the origin of
 3. The short orbital period of less than one hour makes these binaries unlikely to be detected in radio pulsar surveys, due to severe Doppler smearing. As well as a relatively short time to merger of less than 10 million years, which makes them unlikely to be detected before they merge when compared to other long-lived DNS. Perhaps explaining why we would not have observed DNS this heavy before.
 
 # Searching for Signs of Eccentricity
-In [our recent paper](https://arxiv.org/abs/2001.06492), we propose that GW190425 may have formed as an isolated binary via unstable case BB mass transfer. Where the first common envelope left a binary consisting of a $$\sim1.4M_{\odot}$$ neutron star and a $$\sim4-5M_{\odot}$$ helium star with an orbital period of $$0.1-2$$ days. The unstable case BB mass transfer may have accreted $$\sim0.05-0.1M_{\odot}$$ of mass onto the first born neutron star during the second common envelope. The second supernova ejected $$\sim1M_{\odot}$$ of mass leaving a $$\sim(1.4+2.0)M_{\odot}$$ DNS, likely with significant eccentricity as a result of the *kick*. 
+In [our recent paper](https://arxiv.org/abs/2001.06492), we propose that GW190425 may have formed as an isolated binary via unstable case BB mass transfer. Where the first common envelope left a binary consisting of a $$\sim1.4M_{\odot}$$ neutron star and a $$\sim4-5M_{\odot}$$ helium star with an orbital period of $$0.1-2$$ days. The unstable case BB mass transfer may have accreted $$\sim0.05-0.1M_{\odot}$$ of mass onto the first born neutron star during the second common envelope. The second supernova ejected $$\sim1M_{\odot}$$ of mass leaving a $$\sim(1.4+2.0)M_{\odot}$$ DNS, likely with significant eccentricity as a result of the **kick**. 
 
 The eccentricity, $$e$$, describes the ellipticity of the orbit where $$e=0$$ is a circular orbit and the orbit becomes increasingly elongated as $$e\rightarrow1$$.
 
