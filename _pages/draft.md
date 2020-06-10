@@ -22,6 +22,7 @@ related: true
 toc: true
 toc_label: "Contents"
 comments: true
+permalink: /draft/
 ---
 
 Public key cryptography is integral to the Bitcoin network. Here I explain how we can generate bitcoin keys from scratch using the C programming language, as well as some features of the Bitcoin protocol.
