@@ -4,7 +4,7 @@ title: "Public Key Cryptography in Bitcoin with C"
 author_profile: true
 last_modified_at: 2020-04-25T03:20:02-05:00
 date: 2020-04-25
-excerpt: ""
+permalink: /draft/
 header:
   teaser: "/assets/images/GWpreview.png"
   og_image: "/assets/images/GWpreview.png"
@@ -22,7 +22,6 @@ related: true
 toc: true
 toc_label: "Contents"
 comments: true
-permalink: /draft/
 ---
 
 Public key cryptography is integral to the Bitcoin network. Here I explain how we can generate bitcoin keys from scratch using the C programming language, as well as some features of the Bitcoin protocol.
