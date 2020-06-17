@@ -2,12 +2,13 @@
 layout: posts
 title: "Cryptography in Bitcoin: How to Create an Address with C"
 author_profile: true
-last_modified_at: 2020-04-25T03:20:02-05:00
+last_modified_at: 2020-06-17T03:20:02-05:00
 date: 2020-04-25
-excerpt: "How to create a legacy Bitcoin address from scratch with basic-intermediate C programming."
+excerpt: "How to create a legacy Bitcoin address from scratch with basic-intermediate C programming, using public key cryptography, hashing functions, and base 58."
 header:
   teaser: "/assets/images/btcTeaser.png"
   og_image: "/assets/images/btcTeaser.png"
+  overlay_image : "/assets/images/btcHeader.png"
   caption: ""
   show_overlay_excerpt: false
 
@@ -23,14 +24,16 @@ toc_label: "Contents"
 comments: true
 ---
 
-Public key cryptography is integral to the Bitcoin network. Here I explain how we can generate bitcoin keys from scratch using the C programming language, as well as some features of the Bitcoin protocol.
+Public key cryptography is integral to the Bitcoin network. Here I explain how we can generate Bitcoin private & public keys, as well as Bitcoin addresses from scratch using the C programming language. I also cover some design choices and features of the Bitcoin protocol implemented by Satoshi Nakamoto.
 
-# Public Key (aka Asymmetric) Cryptography
+# Public Key Cryptography (Asymmetric)
 The predecessor to public key cryptography is *symmetric key* cryptography, where you and I share a secret password and use it to encrypt and decrypt messages that we send eachother. Think of this like a cipher, where you might replace the letter `A` with `B`, and `B` with `C` and so on. To decrypt your secret message, I would do the reverse using the same key.
 
 A fundamental flaw of this scheme is that we **must** share the secret key in order to use it, but as we are yet to establish a safe encrypted means of communication, an attacker may intercept our secret key!
 
-Public key cryptography solves this, where each user has a secret *private key* from which a *public key* can be generated. If I want to send you a message, I first obtain a copy of your public key and then use it to encrypt my message. Then I can transmit this encrypted message to you, where you then use your private key to decrypt the message. Notice here how you can openly share your public key rather than **secretly**, and as long as no one else knows your private key the message will be safe from prying eyes.
+Public key cryptography solves this, where each user has their own secret *private key* and *public key*. If I want to send you a message, I first obtain a copy of your public key and then use it to encrypt my message. Then I can transmit this encrypted message to you, where you then use your private key to decrypt the message. Notice here how you can openly share your public key rather than **secretly**, and as long as no one else knows your private key the message will be safe from prying eyes.
+
+There are a number of different public key protocols, but in all of them you can generate a public key from a private key but never the reverse. These protocols rely on special cryptographic functions that are exclusively one way, ensuring that it is impossible to determine a private key from someone's public key.
 
 In the Bitcoin protocol, an *address* is where bitcoin is sent to. You can generate an address by taking a *hash* of your public key. A *cryptographic hash function* takes any input data and returns a fixed-length string, where it is impossible to calculate the reverse as these functions are *one-way*. For example, a commonly used hash function is SHA-256:
 ```c
@@ -50,16 +53,16 @@ With `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2
 	* `SHA256(public_key) = 0b7c28c9b7290c98d7438e70b3d3f7c848fbd7d1dc194ff83f4f7cc9b1378e98`
 2. Calculate the RIPEMD-160 hash of this SHA-256 hash 
 	* `RIPEMD160(SHA256(public_key)) = f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-3. To create a *checksum* we take the SHA-256 of this RIPEMD-160 hash **twice** and take the first 4 bytes. 
+3. To create a *checksum* we take the SHA-256 of this RIPEMD-160 hash **twice** and take the first 4 bytes
 	* `SHA256(SHA256(RIPEMD160(SHA256(public_key)))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
 	* `c7f18fe8` is our checksum
-4. Add the checksum to the end of the original RIPEMD160 hash at step 3
+4. Add the checksum to the end of the original RIPEMD160 hash at step 2
 	* `f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
 5. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
 	* `PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
 6. Add a version byte in front of this to complete our address (`0x00` for main-net)
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
-7. Remove any extra leading 1's. In base58, 0 is represented by a 1 and thus it is pointless to have multiple leading 1's. Only one 1 is required to indicate the address type and version.
+7. Remove any extra leading 1's. In base58 0 is represented by a 1 and thus it is pointless to have multiple leading 1's. Would you give your house address with 00032 Smith St? Only one 1 is required to indicate the address type and version.
 	* Nothing needs to be done to the address above as it only has one 1.
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
 	
@@ -67,7 +70,7 @@ With `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2
 It is a complicated scheme! But it includes several very useful features which are detailed below.
 
 ## Checksum
-The *checksum* allows anyone to confirm that this public address is a legitimate address. If someone sends us an address, we can verify it by performing steps 4 & 5 on the first 21 bytes, we can **check** that the last 4 bytes of the address are correct. This is most useful when entering a public address by hand where most wallets will prevent you from attempting to send bitcoin to an illegitimate address.
+The *checksum* allows anyone to confirm that this public address is a legitimate address. If someone sends us an address, we can verify by performing steps 4 & 5 on the first 21 bytes, and then **check** that the last 4 bytes of the address are correct. This is most useful when entering a public address by hand where most wallets will prevent you from attempting to send bitcoin to an illegitimate address.
 
 ## Base 58
 Base58 might seem like a weird way to represent addresses at first, but it has some properties that make it advantageous over a decimal 0-9 representation. The first is that using a number system with a high base allows for shorter representation of large integers. For example, the number 1337 in binary would look like `10100111001` in binary (base 2) but looks like `Q4` in base 58. As bitcoin addresses are technically just very large integers, this makes sending and reading addresses much simpler.
@@ -75,7 +78,7 @@ Base58 might seem like a weird way to represent addresses at first, but it has s
 A computationally inclined person may ask, why not use something more natural like base64? Well base58 uses every number, lowercase letter, and upercase letter **except** for characters that can easily be mistaken (0, O, I, l). Note $$2\times26 + 10 - 4 = 58$$. Removing these confusing characters makes it much less likely for Bitcoin addresses to be entered incorrectly.
 
 # Creating Bitcoin Addresses in C
-Bitcoin uses *Elliptic curve cryptography* to create a public and private key pair. I will cover the details of how this works in a later post, but for now all we need to know is that Bitcoin uses an eliptic curve called `secp256k1` to create a public key from a private key which have the properties of asymmetric cryptography outlined above.
+Bitcoin uses *Elliptic Curve Cryptography* to create a public and private key pair. I will cover the details of how this works in a later post, but for now all we need to know is that Bitcoin uses an eliptic curve called `secp256k1` to create a public key from a private key which have the properties of asymmetric cryptography outlined earlier.
 
 To use this eliptic curve in C, we will be using the [bitcoin-core/secp256k1](https://github.com/bitcoin-core/secp256k1) library, installation is [trivial](https://github.com/bitcoin-core/secp256k1#build-steps) on Linux and MacOS.
 
@@ -86,7 +89,7 @@ static secp256k1_context *ctx = NULL;
 ctx = secp256k1_context_create(
 			SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
 ```
-From the documentation of the library: *"The purpose of context structures is to cache large precomputed data tables that are expensive to construct..."*. This allows for addresses to be generated quickly.
+From the documentation of the library: *"The purpose of context structures is to cache large precomputed data tables that are expensive to construct..."*. This allows for addresses to be generated quickly and we will need a context in order to generate our keys.
 
 
 ## Generating a Private Key in C
@@ -273,7 +276,7 @@ To convert your private key into WIF:
 5. Add these 4 bytes to the end of the extended private key in step 1.
 6. Convert to base58 (you can reuse the function from earlier)
 
-If everything goes right then your WIF private key should begin with a `5`. For more details see [wiki/Wallet_import_format](https://en.bitcoin.it/wiki/Wallet_import_format).
+🧠 I will leave this as an excercise for now, as it is almost identical to the bitcoin address creation scheme. If everything goes right then your WIF private key should begin with a `5`. For more details see [wiki/Wallet_import_format](https://en.bitcoin.it/wiki/Wallet_import_format).
 
 In the Electrum/Electron wallets you can load your WIF like this:
 ![Wallet demo](/assets/images/electroncash.png)
@@ -282,3 +285,6 @@ In the Electrum/Electron wallets you can load your WIF like this:
 # Bitcoin Vanity Address
 By extending the above code, you can rapidly generate new bitcoin addresses in the hope of randomly reciving a 'nice' address like `1DEADBEEFx24sa...` or `100000ae...`. To see an example of this see my attempt on Github: [niceBit](https://github.com/NicholasFarrow/niceBit).
 
+If you found this useful, please support me in creating these tutorials:
+
+**BTC: 1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7**
