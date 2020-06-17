@@ -9,7 +9,7 @@ header:
   teaser: "/assets/images/btcTeaser.png"
   og_image: "/assets/images/btcTeaser.png"
   overlay_image : "/assets/images/btcHeader.png"
-  caption: ""
+  caption: "©Coindesk"
   show_overlay_excerpt: false
 
 layout: single
