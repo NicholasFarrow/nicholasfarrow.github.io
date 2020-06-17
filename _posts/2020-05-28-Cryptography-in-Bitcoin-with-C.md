@@ -30,9 +30,9 @@ The predecessor to public key cryptography is *symmetric key* cryptography, wher
 
 A fundamental flaw of this scheme is that we **must** share the secret key in order to use it, but as we are yet to establish a safe encrypted means of communication, an attacker may intercept our secret key!
 
-Public key cryptography solves this, where each user has a secret *private key* from which a *publc key* can be generated. If I want to send you a message, I first obtain a copy of your public key and then use it to encrypt my message. Then I can transmit this encrypted message to you, where you then use your private key to decrypt the message. Notice here how you can openly share your public key rather than **secretly**, and as long as no one else knows your private key the message will be safe from prying eyes.
+Public key cryptography solves this, where each user has a secret *private key* from which a *public key* can be generated. If I want to send you a message, I first obtain a copy of your public key and then use it to encrypt my message. Then I can transmit this encrypted message to you, where you then use your private key to decrypt the message. Notice here how you can openly share your public key rather than **secretly**, and as long as no one else knows your private key the message will be safe from prying eyes.
 
-In the Bitcoin protocol, an *address* is where bitcoin is sent to. You can generate an address by taking a *hash* of your public key. A *cryptographic hash function* takes any input data and returns a fixed-length string, where it is impossbile to calculate the reverse as these functions are *one-way*. For example, a commonly used hash function is SHA-256:
+In the Bitcoin protocol, an *address* is where bitcoin is sent to. You can generate an address by taking a *hash* of your public key. A *cryptographic hash function* takes any input data and returns a fixed-length string, where it is impossible to calculate the reverse as these functions are *one-way*. For example, a commonly used hash function is SHA-256:
 ```c
 SHA256("nick")
 = "7f0b629cbb9d794b3daf19fcd686a30a039b47395545394dadc0574744996a87"
