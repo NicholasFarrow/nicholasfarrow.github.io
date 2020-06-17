@@ -147,14 +147,14 @@ secp256k1_pubkey pubkey;
 ```
 then we create the public key using a function from the `secp256k1` library:
 ```c
-secp256k1_ec_pubkey_create(ctx, &pubkey, seckey)
+secp256k1_ec_pubkey_create(ctx, &pubkey, seckey);
 ```
 Note that this function takes a pointer for the location of where the public key is to be written.
 
 We now need to *serialize* this address to translate it into bytes. We use a `size_t` variable to store the length of the address in bytes:
 ```c
 size_t pk_len = 65;
-char pk_bytes[34]
+char pk_bytes[34];
 
 /* Serialize Public Key */
 secp256k1_ec_pubkey_serialize(
@@ -182,6 +182,8 @@ char pubaddress[34];
 byte s[65];
 byte rmd[5 + RIPEMD160_DIGEST_LENGTH];
 ```
+We need to define the type byte at the top of our file with `typedef unsigned char byte`.
+
 First, let us duplicate our public key into `s` by looping through each byte. Uncompresse public keys are 65 bytes:
 ```c
 int j;	
@@ -207,6 +209,7 @@ but we only need the last 4 bytes of the checksum, so we can use `memcpy` to cop
 ```c
 memcpy(rmd + 21, SHA256(SHA256(rmd, 21, 0), SHA256_DIGEST_LENGTH, 0), 4);
 ```
+To use `memcpy` we need to `#include <string.h>` at the top of our file.
 
 Now we are very close to a usable bitcoin address, all that is left is to convert these bytes into base58. 
 
