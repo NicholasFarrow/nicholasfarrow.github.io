@@ -1,15 +1,14 @@
 ---
 layout: posts
-title: "Public Key Cryptography in Bitcoin with C"
+title: "Cryptography in Bitcoin: How to Create an Address with C"
 author_profile: true
 last_modified_at: 2020-04-25T03:20:02-05:00
 date: 2020-04-25
-excerpt: ""
+excerpt: "How to create a legacy Bitcoin address from scratch with basic-intermediate C programming."
 header:
-  teaser: "/assets/images/GWpreview.png"
-  og_image: "/assets/images/GWpreview.png"
-  overlay_image: "/assets/images/GW190425.jpg"
-  caption: "GW190425 Illustration: [Aurore Simonnet](http://auroresimonnet.com/)"
+  teaser: "/assets/images/btcTeaser.png"
+  og_image: "/assets/images/btcTeaser.png"
+  caption: ""
   show_overlay_excerpt: false
 
 layout: single
@@ -27,7 +26,9 @@ comments: true
 Public key cryptography is integral to the Bitcoin network. Here I explain how we can generate bitcoin keys from scratch using the C programming language, as well as some features of the Bitcoin protocol.
 
 # Public Key (aka Asymmetric) Cryptography
-The predecessor to public key cryptography is *symmetric key* cryptography, where you and I share a secret password and use it to encrypt and decrypt messages we send between one another. A fundamental flaw of this scheme is that we **must** share the secret key in order to use it, but as we are yet to establish a safe encrypted means of communication, an attacker may intercept our secret key!
+The predecessor to public key cryptography is *symmetric key* cryptography, where you and I share a secret password and use it to encrypt and decrypt messages that we send eachother. Think of this like a cipher, where you might replace the letter `A` with `B`, and `B` with `C` and so on. To decrypt your secret message, I would do the reverse using the same key.
+
+A fundamental flaw of this scheme is that we **must** share the secret key in order to use it, but as we are yet to establish a safe encrypted means of communication, an attacker may intercept our secret key!
 
 Public key cryptography solves this, where each user has a secret *private key* from which a *publc key* can be generated. If I want to send you a message, I first obtain a copy of your public key and then use it to encrypt my message. Then I can transmit this encrypted message to you, where you then use your private key to decrypt the message. Notice here how you can openly share your public key rather than **secretly**, and as long as no one else knows your private key the message will be safe from prying eyes.
 
@@ -41,23 +42,27 @@ SHA256("nicko")
 ```
 Notice how just adding a single letter to the input string completely changes the hash. Also see how the hash function outputs a string of fixed length regardless of input length.
 
-## Bitcoin Addresses (legacy)
-In Bitcoin there are now multiple types of addresses (see [/wiki/Address](https://en.bitcoin.it/wiki/Address)). The original "legacy" addresses implimented by Satoshi Nakamoto begin with the number `1`: `1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7`. Legacy addresses are calculated using the following scheme:
+## Bitcoin Addresses (Legacy P2PKH)
+In Bitcoin there are now multiple types of addresses (see [/wiki/Address](https://en.bitcoin.it/wiki/Address)). The original "legacy" addresses implemented by Satoshi Nakamoto begin with the number `1`: `1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7`. This address type is known as *Pay-to-PubkeyHash* or **P2PKH** for short. Legacy addresses are calculated using the following scheme:
 
 With `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2352`:
 1. Calculate the SHA-256 hash of the public key 
 	* `SHA256(public_key) = 0b7c28c9b7290c98d7438e70b3d3f7c848fbd7d1dc194ff83f4f7cc9b1378e98`
 2. Calculate the RIPEMD-160 hash of this SHA-256 hash 
 	* `RIPEMD160(SHA256(public_key)) = f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-3. Add a version byte in front of this has (`0x00` for main-net)
-	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-4. To create a *checksum* we take the SHA-256 of this RIPEMD-160 hash **twice** and take the first 4 bytes. 
+3. To create a *checksum* we take the SHA-256 of this RIPEMD-160 hash **twice** and take the first 4 bytes. 
 	* `SHA256(SHA256(RIPEMD160(SHA256(public_key)))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
 	* `c7f18fe8` is our checksum
-5. Add the checksum to the end of the original RIPEMD160 hash at step 3
-	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
-6. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
-	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs` 
+4. Add the checksum to the end of the original RIPEMD160 hash at step 3
+	* `f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
+5. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
+	* `PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
+6. Add a version byte in front of this to complete our address (`0x00` for main-net)
+	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
+7. Remove any extra leading 1's. In base58, 0 is represented by a 1 and thus it is pointless to have multiple leading 1's. Only one 1 is required to indicate the address type and version.
+	* Nothing needs to be done to the address above as it only has one 1.
+	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
+	
 
 It is a complicated scheme! But it includes several very useful features which are detailed below.
 
@@ -84,7 +89,7 @@ ctx = secp256k1_context_create(
 From the documentation of the library: *"The purpose of context structures is to cache large precomputed data tables that are expensive to construct..."*. This allows for addresses to be generated quickly.
 
 
-## Generating a Private Key
+## Generating a Private Key in C
 A private key in Bitcoin is a 256-bit number, also represented as 32 bytes in hexidecimal:
 `E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262`
 
@@ -92,9 +97,13 @@ In Unix systems, we can get randomness from `/dev/urandom`, if you `cat /dev/ura
 
 Using C we can load 32 random bytes by reading from `/dev/urandom`:
 ```c
+#include <secp256k1.h>
 #include <stdio.h>
+static secp256k1_context *ctx = NULL;
 
 int main() {
+    ctx = secp256k1_context_create(
+	SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
     /* Declare the private variable as a 32 byte unsigned char */
     unsigned char seckey[32];
     
@@ -107,7 +116,6 @@ int main() {
     /* Close the file */
     fclose(frand);
 
-    
     /* Loop through and print each byte of the private key, */
     printf("Private Key: ");
     for(int i=0; i<32; i++) {
@@ -121,54 +129,66 @@ Saving as `privkey.c`, compiling with `gcc privkey.c -o privkey`, and running wi
 Private Key: 224877F96B66F4A114DDCE97085F5F1570EDF5EB1F1D7E6795673729A2E80B20
 ```
 
-Due to limitations on the secp256k1 curve, not all private keys are valid. There is a $$1/2^{128}$$ chance that the private key is invalid, so we need to check our key is valid by including:
+Due to limitations on the secp256k1 curve, not all private keys are valid. There is a $$1/2^{128}$$ chance that the private key is invalid, so we need to check our key is valid by including the following to our `main` function:
 ```c
 if (!secp256k1_ec_seckey_verify(ctx, seckey)) {
 	printf("Invalid secret key\n");
-	return 1
+	return 1;
 }
 ```
 
 ## Creating a Public Key in C
-Now that we have a 32 byte private key, we can use `secp256k1` to calculate the corresponding public key. First, we need to declare two new variables, a `secp256k1_pubkey` to store our public key, and a `size_t` to store the size of the public key in bytes. Uncompressed public keys are 65 bytes::
+Now that we have a 32 byte private key, we can use `secp256k1` to calculate the corresponding public key. First, we need to declare a new variable, `secp256k1_pubkey`, to store our public key:
 ```c
 secp256k1_pubkey pubkey;
-size_t pk_len = 65;
 ```
-then we serialize this public key using a function from the `secp256k1` library:
+then we create the public key using a function from the `secp256k1` library:
 ```c
+secp256k1_ec_pubkey_create(ctx, &pubkey, seckey)
+```
+Note that this function takes a pointer for the location of where the public key is to be written.
+
+We now need to *serialize* this address to translate it into bytes. We use a `size_t` variable to store the length of the address in bytes:
+```c
+size_t pk_len = 65;
+char pk_bytes[34]
+
 /* Serialize Public Key */
 secp256k1_ec_pubkey_serialize(
 	ctx,
-	public_key64,
+	pk_bytes,
 	&pk_len,
 	&pubkey,
 	SECP256K1_EC_UNCOMPRESSED
 	);
 ```
-Note that this function takes pointers for `pk_len` and `pubkey` so that our public key.
+This function takes a pointer for the length and location of the public key. It *serializes* the public key into bytes so that we can then manipulate it.
 
 ## Creating a Bitcoin Address in C
-Currently, we have a private key and its corresponding public key in bytes. We wish to follow the scheme outlined earlier to create a bitcoin address. Here we will need to use the C `crypto` library to provide the required `SHA256` and `RIPEMD160` hashing functions.
+Currently, we have a private key and its corresponding public key in bytes. We wish to follow the scheme outlined earlier to create a bitcoin address. Here we will need to use the C `openssl` library (`-lcrypto`) to provide the required `SHA256` and `RIPEMD160` hashing functions.
 
-We need several new variables, a `char` variable of length 40 to store our address, a `byte` variable of length `5+RIPEMD160_DIGEST_LENGTH` which is automatically set by the `crypto` library. We also will use one other `byte` variable to store our hashes in:
+At the top of our `.c` file we require:
 ```c
-char pubaddress[40];
+#include <openssl/sha.h>
+#include <openssl/ripemd.h>
+```
+
+To use these hashing functions we need several new variables, a `char` variable of length 34 to store our address, a `byte` variable `rmd` of length `5+RIPEMD160_DIGEST_LENGTH` (5+20) to store our final hashes. We will also use a `byte` type variable `s` to store some temporary hashes in:
+```c
+char pubaddress[34];
 byte s[65];
 byte rmd[5 + RIPEMD160_DIGEST_LENGTH];
 ```
-First, let us duplicate our public key into `s` by looping through each byte:
+First, let us duplicate our public key into `s` by looping through each byte. Uncompresse public keys are 65 bytes:
 ```c
 int j;	
 for (j = 0; j < 65; j++) {
-	s[j] = pubkey64[j];
+	s[j] = pk_bytes[j];
 }
 ```
-Now we follow the scheme outlined earlier. We be taking the first `SHA256` hash of our public key with `SHA256(s, 65, 0)` and then take the `RIPEMD160` of this hash with `RIPEMD160(SHA_HASH, SHA256_DIGEST_LENGTH, md)` where `md` is the location where we are storing the output.
-
-Noting that we also need to set a version byte at the start of `rmd` to `0x00` we can do this all in two lines:
+Following the scheme outlined in the steps to create a legacy Bitcoin Address. We be taking the first `SHA256` hash of our public key `s` with `SHA256(s, 65, 0)` and then take the `RIPEMD160` of this hash with `RIPEMD160(SHA_HASH, SHA256_DIGEST_LENGTH, md)` where `md` is the location where we are storing the output.
 ```c
-rmd[0] = 0;
+/* Set 0x00 byte for main net */
 RIPEMD160(SHA256(s, 65, 0), SHA256_DIGEST_LENGTH, rmd + 1);
 ```
 This completes steps 1-3, now we need to find the checksum.
@@ -177,24 +197,88 @@ To create the checksum, we take the `SHA256` of this hash twice with:
 ```c
 SHA256(SHA256(rmd, 21, 0), SHA256_DIGEST_LENGTH, 0)
 ```
-but we only need the last 4 bytes of the checksum, so we can use `memcpy` to copy these bytes to the end of our `rmd`:
+but we only need the last 4 bytes of the checksum, so we can use `memcpy` to copy these bytes to the end of the first 21 bytes of `rmd`:
 ```c
 memcpy(rmd + 21, SHA256(SHA256(rmd, 21, 0), SHA256_DIGEST_LENGTH, 0), 4);
 ```
 
 Now we are very close to a usable bitcoin address, all that is left is to convert these bytes into base58. 
 
+We can use this `base58` function to convert into base 58. Placing `base58()` above our `main()` function:
+```c
+/* See https://en.wikipedia.org/wiki/Positional_notation#Base_conversion */
+char* base58(byte *s, int s_size, char *out, int out_size) {
+        static const char *tmpl = "123456789"
+                "ABCDEFGHJKLMNPQRSTUVWXYZ"
+                "abcdefghijkmnopqrstuvwxyz";
 
-then we wish to
+        int c, i, n;
 
-# Data integrity
-# Data Authenticity
-#
+        out[n = out_size] = 0;
+        while (n--) {
+                for (c = i = 0; i < s_size; i++) {
+                        c = c * 256 + s[i];
+                        s[i] = c / 58;
+                        c %= 58;
+                }
+                out[n] = tmpl[c];
+        }
 
+        return out;
+}
+```
 
+To store our address we need a `char` 34 characters long. We can now create our bitcoin address with these final lines in `main`:
+```c
+char address[34];
+base58(rmd, 25, address, 34);
+```
 
+Finally we need to remove any extra leading 1's from the beginning of the address. We can do this by counting the number of 1s at the start of the address. If there are multiple leading 1s, then move the memory accross to begin the string with the final 1 and also shorten the string by the number of 1s removed.
+```c
+/* Count the number of 1s at the beginning of the address */
+int n = 0;
+for (n = 0; address[n] == '1'; n++);
 
-We wish to be able to create ethereum vanity addresses like `0xda66666666c...` through the only option possible, brute force. 
+/* Do we need to remove any 1s? */
+if (n > 1) {
+	/* Move the memory so that the address begins at the final 1 */
+	memmove(address, address + (n-1), 34-(n-1));
 
-If you wish to start generating vanity addresses right away, you can easily do so with the [full code](https://github.com/NicholasFarrow/ethVanGen).
+	/* Force the address to finish at the correct length */
+	pubaddress[34-(n-1)] = '\0';
+}
+
+printf("Address: %s\n\n", address);
+```
+
+When you compile with `gcc file.c -o btcGen -lcrypto -lsecp256k1`, and run with `./btcGen` **hopefully** you will be greeted with a Bitcoin address starting with `1`:
+```sh
+$ gcc btc.c -o btcGen -lcrypto -lsecp256k1
+$ ./btcGen
+Private Key: C616D1713C3BBE0627CEBBA2527C31E3304381D88BD470B27BE1318AFC3F1469
+Address: 1BriRDxtB2C3e3GzxXP6PtMNCWxBeXNv33
+```
+
+# Wallet Import Format (WIF)
+Great now we have an address that we can send bitcoin to! But how do we spend it? Most software wallets **WILL NOT ACCEPT** raw byte private keys. Instead, the convention is to use *Wallet Import Format*; which like in bitcoin addresses, makes the private key easier to copy and transmit.
+
+**NEVER STORE LARGE AMOUNTS OF BTC ON SELF GENERATED WALLETS**
+
+To convert your private key into WIF:
+1. Add a version byte (0x80 for mainnet) to the front of the private key
+2. Calculate the SHA256 hash
+3. Calculate the SHA256 hash again
+4. Take the first 4 bytes from this hash, this is our checksum
+5. Add these 4 bytes to the end of the extended private key in step 1.
+6. Convert to base58 (you can reuse the function from earlier)
+
+If everything goes right then your WIF private key should begin with a `5`. For more details see [wiki/Wallet_import_format](https://en.bitcoin.it/wiki/Wallet_import_format).
+
+In the Electrum/Electron wallets you can load your WIF like this:
+![Wallet demo](/assets/images/electroncash.png)
+(I'm only using BCH here because the low fees are nice for testing 😷)
+
+# Bitcoin Vanity Address
+By extending the above code, you can rapidly generate new bitcoin addresses in the hope of randomly reciving a 'nice' address like `1DEADBEEFx24sa...` or `100000ae...`. To see an example of this see my attempt on Github: [niceBit](https://github.com/NicholasFarrow/niceBit).
 
