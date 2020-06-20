@@ -291,6 +291,8 @@ In the Electrum/Electron wallets you can load your WIF like this:
 # Bitcoin Vanity Address
 By extending the above code, you can rapidly generate new bitcoin addresses in the hope of randomly reciving a 'nice' address like `1DEADBEEFx24sa...` or `100000ae...`. To see an example of this see my attempt on Github: [niceBit](https://github.com/NicholasFarrow/niceBit).
 
+A rough summary of the code from this tutorial here [/assets/btc_gen.c](/assets/btc_gen.c), which is ready to compile and run.
+
 If you found this useful, please support me in creating these tutorials:
 
 **BTC: 1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7**
