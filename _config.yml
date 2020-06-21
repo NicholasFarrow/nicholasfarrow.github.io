@@ -12,22 +12,22 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Nick Farrow"
+title                    : "nick"
 title_separator          : "//"
-name                     : "Nicholas Farrow"
+name                     : "Nick Farrow"
 description              : "Posts & Tutorials about Unix, Python, Gravitational Waves, and other Physics by Nick"
 url                      : "https://nickfarrow.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/teaser.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo1.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Nick" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Home" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : true # true, false (default)
 words_per_minute         : 125
 comments:
