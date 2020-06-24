@@ -42,7 +42,7 @@ sudo make install
 ~~~
 Then add `exec i3` to your `~/.xinitrc`.
 
-[See here](https://www.youtube.com/watch?v=GKviflL9XeI) for a good introductory video on navigating `i3` using the keyboard. Also, see my [i3 config](https://github.com/NicholasFarrow/plugfiles/blob/arch-x1/.config/i3/config) which you should install in `~/.config/i3/config` and customise.
+[See here](https://www.youtube.com/watch?v=GKviflL9XeI) for a good introductory video on navigating `i3` using the keyboard. Also, see my [i3 config](https://github.com/nickfarrow/plugfiles/blob/arch-x1/.config/i3/config) which you should install in `~/.config/i3/config` and customise.
 
 # Compton (transparency & blur)
 Compton is a compositor which composits windows into an offscreen buffer before writing to the display memory. This allows for numerous effects, particularly transparency and blurring.
@@ -74,7 +74,7 @@ Below is an image of my polybar. Left: custom crypto price tickers and VPN statu
 
 ![polybar](/assets/images/polybar.png)
 
-You can find my [polybar config here](https://github.com/NicholasFarrow/plugfiles/blob/arch-x1/.config/polybar/config).
+You can find my [polybar config here](https://github.com/nickfarrow/plugfiles/blob/arch-x1/.config/polybar/config).
 
 # st (terminal)
 I am using [Luke Smith's fork](https://github.com/LukeSmithxyz/st) of the suckless simple terminal (st) which has some really nice features such as scrollback, font-size hotkeys, good text copy/paste.

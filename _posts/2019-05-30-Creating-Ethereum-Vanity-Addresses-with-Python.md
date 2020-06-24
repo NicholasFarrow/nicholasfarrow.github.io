@@ -20,7 +20,7 @@ related: true
 
 We wish to be able to create ethereum vanity addresses like `0xda66666666c...` through the only option possible, brute force. 
 
-If you wish to start generating vanity addresses right away, you can easily do so with the [full code](https://github.com/NicholasFarrow/ethVanGen).
+If you wish to start generating vanity addresses right away, you can easily do so with the [full code](https://github.com/nickfarrow/ethVanGen).
 
 First we will need the `ethereum` **Python 3** module which easily allows us to create a *private key* which is then used generate a *public key*, hopefully with the pattern of characters which we desire `0x1234...`.
 
@@ -112,4 +112,4 @@ nick@nick:~/repos$ python3.7 vanGen.py
 Found address: 0x5AA832a1491016FAAd444444f4D792A73aa2a550
 Private Key (hex) 64a7b90c3361d8fdfed44dc1eeee351405a0acfbcd15b71bc8c751f50ac58371
 ~~~
-There are lots of other custom addresses you can search for. For example you can look for words which use characters `A-F` with alphanumeric words. A full [implementation of this is on my Github](https://github.com/NicholasFarrow/ethVanGen).
+There are lots of other custom addresses you can search for. For example you can look for words which use characters `A-F` with alphanumeric words. A full [implementation of this is on my Github](https://github.com/nickfarrow/ethVanGen).
