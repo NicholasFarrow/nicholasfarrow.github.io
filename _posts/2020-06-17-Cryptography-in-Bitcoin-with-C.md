@@ -62,8 +62,7 @@ With `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
 6. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
-7. Remove any extra leading 1's. In base58 0 is represented by a 1 and thus it is pointless to have multiple leading 1's. Would you give your house address with 00032 Smith St? Only one 1 is required to indicate the address type and version.
-	* Nothing needs to be done to the address above as it only has one 1.
+7. Remove any extra leading 1's. In base58 a '1' represents a value of zero and thus has no value at the front of address. However, a leading '1' is included for each leading `00` byte.	* Nothing needs to be done to the address above as it only has one 1.
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
 	
 
