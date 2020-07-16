@@ -216,20 +216,23 @@ We can use this `base58` function to convert into base 58. Placing `base58()` ab
 ```c
 /* See https://en.wikipedia.org/wiki/Positional_notation#Base_conversion */
 char* base58(byte *s, int s_size, char *out, int out_size) {
-        static const char *tmpl = "123456789"
+        static const char *base_chars = "123456789"
                 "ABCDEFGHJKLMNPQRSTUVWXYZ"
                 "abcdefghijkmnopqrstuvwxyz";
+
+        byte s_cp[s_size];
+        memcpy(s_cp, s, s_size);
 
         int c, i, n;
 
         out[n = out_size] = 0;
         while (n--) {
                 for (c = i = 0; i < s_size; i++) {
-                        c = c * 256 + s[i];
-                        s[i] = c / 58;
+                        c = c * 256 + s_cp[i];
+                        s_cp[i] = c / 58;
                         c %= 58;
                 }
-                out[n] = tmpl[c];
+                out[n] = base_chars[c];
         }
 
         return out;
@@ -242,20 +245,19 @@ char address[34];
 base58(rmd, 25, address, 34);
 ```
 
-Finally we need to remove any extra leading 1's from the beginning of the address. We can do this by counting the number of 1s at the start of the address. If there are multiple leading 1s, then move the memory accross to begin the string with the final 1 and also shorten the string by the number of 1s removed.
+Finally we need to remove any extra leading 1's from the beginning of the address. We can find the number of leading `1`s we need to remove by counting the number of `1`s at the start of the address and subtracting by the number of `0x00` bytes at the beginning of our `rmd` hash. If a digit needs to be removed, we shift the memory storing the address accross by one, removing the first digit. We also shorten the string by the number of `1`s removed.
 ```c
-/* Count the number of 1s at the beginning of the address */
-int n = 0;
-for (n = 0; address[n] == '1'; n++);
+/* Count the number of extra 1s at the beginning of the address */
+int k;
+for (k = 1; out[k] == '1'; k++);
 
-/* Do we need to remove any 1s? */
-if (n > 1) {
-	/* Move the memory so that the address begins at the final 1 */
-	memmove(address, address + (n-1), 34-(n-1));
+/* Count the number of extra leading 0x00 bytes */
+int n;
+for (n = 1; rmd[n] == 0x00; n++);
 
-	/* Force the address to finish at the correct length */
-	pubaddress[34-(n-1)] = '\0';
-}
+/* Remove k-n leading 1's from the address */
+memmove(address, address + (k-n), 34-(k-n));
+address[34-(k-n)] = '\0';
 
 printf("Address: %s\n\n", address);
 ```
