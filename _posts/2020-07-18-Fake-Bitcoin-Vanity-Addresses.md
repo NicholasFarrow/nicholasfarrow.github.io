@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "How A Message Was Sent To The Twitter Hacker With Bitcoin Addresses"
+title: "How A Message Was Sent To The Twitter Hacker via Bitcoin Addresses"
 author_profile: true
 last_modified_at: 2020-07-18T03:20:02-05:00
 date: 2020-07-18
