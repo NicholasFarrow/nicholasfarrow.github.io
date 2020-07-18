@@ -101,7 +101,7 @@ Well the checksum also means it is very difficult to enter 33-34 desired charact
 This could be brute forced, by designing a ~30 character long message and randomly trying a few billion combinations of the last characters would work, but very very slowly.
 
 # Forging an Address
-There is a smarter way to create a crazy address like `1YouTakeRiskWhenUseBitcoin11cGozM`. We can forge one. First we will **choose** our desired message, I'll go with `SendNickBitcoinPls`. 
+There is a smarter way to create a crazy address like `1YouTakeRiskWhenUseBitcoin11cGozM`. We can forge one. This will involve creating our desired message, converting back to bytes, recalculating the checksum, then converting back to base58 format. First we will **choose** our desired message, I'll go with `SendNickBitcoinPls`. 
 
 Next, we will put this into a format that resembles a bitcoin address,
 * Beginning with a `1`: `1SendNickBitcoin`
