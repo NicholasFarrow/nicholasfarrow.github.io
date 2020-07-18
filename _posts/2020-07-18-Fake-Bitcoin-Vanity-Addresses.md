@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "How A Hidden Message Was Sent To The Twitter Hacker Using Fake Bitcoin Addresses"
+title: "How A Message Was Sent To The Twitter Hacker With Bitcoin Addresses"
 author_profile: true
 last_modified_at: 2020-07-18T03:20:02-05:00
 date: 2020-07-18
@@ -27,10 +27,10 @@ A recent [Twitter hack](https://cointelegraph.com/news/elon-musk-twitter-account
 
 ![elon](/assets/images/elon.jpeg)
 
-Only managing to steal ~$120,000 USD, there has been great confusion as to why the hacker with an attack weilding such power would go with such a bad scam. Much speculation has arisen as a result, with a few predominant themes:
+Only managing to steal ~$120,000 USD, there has been great confusion as to why the hacker with an attack wielding such power would go with such a bad scam. Much speculation has arisen as a result, with a few predominant themes:
 1. The hacker panicked upon gaining their access. The hacker may have believed they had a small window of time before they lost access to the accounts, and thus went with the easiest scam they could think of.
 2. The hacker had no other capital to invest into a more profitable scam. While more elaborate and perhaps riskier, the hacker could have tweeted in such a way to crash stocks or even entire markets given the enormity of their power. For example, Elon Musk's [tweets in the past](https://www.washingtonpost.com/technology/2020/05/01/musk-tesla-stock/) have reduced Tesla's share price by more than 10 percent. 
-* If the hacker was converned about traceability with stock trades, they could have just opened a highly leveraged position on bitcoin and posted bullish statements such as "We should look towards moving the United States to a Bitcoin standard dollar". I believe this would have been far more profitable and also less bad publicity for Bitcoin 😏, though it would require some inital capital.
+* If the hacker was concerned about traceability with stock trades, they could have just opened a highly leveraged anonymous position on bitcoin and posted bullish statements such as "We should look towards moving the United States to a Bitcoin standard dollar". I believe this would have been far more profitable and also less bad publicity for Bitcoin 😏, though it would require some initial capital.
 3. This was not the real hack, but possibly a diversion away from something greater. It is currently unconfirmed as to whether the hacker had access to the private messages on the accounts they had accessed. If this data has been stolen, there is great potential for large scale blackmail using the private conversations between verified celebrities, journalists, politicians etc.
 
 # A Message to the Hacker
@@ -47,7 +47,7 @@ For Your Twitter Game
 Bitcoin is Traceable
 Why Not Monero
 ```
-Monero is known as a privacy coin, where Bitcoin transactions are fully transparent and hence pseudo-anonymous as long as your addresses are detached from your identity. Monero uses an obfuscated ledger where it is impossible to determine the source, amount, or desination of transactions.
+Monero is known as a privacy coin, where Bitcoin transactions are fully transparent and hence pseudo-anonymous as long as your addresses are detached from your identity. Monero uses an obfuscated ledger where it is impossible to determine the source, amount, or destination of transactions.
 
 It appears that someone decided to give the hacker some advice: use Monero for these scams or else you risk getting caught. It should be mentioned however that attempting to scam Monero would dramatically reduce the already tiny 'target audience' for the attack:
 
