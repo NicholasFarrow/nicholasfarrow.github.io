@@ -79,8 +79,8 @@ With a `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5
 	* `RIPEMD160(SHA256(public_key)) = f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
 3. Add a version byte in front of this to complete our address (`0x00` for main-net)
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-4. To create a *checksum* we take the SHA-256 of this RIPEMD-160 hash **twice** and take the first 4 bytes
-	* `SHA256(SHA256(RIPEMD160(SHA256(public_key)))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
+4. To create a *checksum* we take the SHA-256 of this extended RIPEMD-160 hash **twice** and take the first 4 bytes
+	* `SHA256(SHA256(RIPEMD160(SHA256({0x00, public_key})))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
 	* `c7f18fe8` is our checksum
 5. Add the checksum to the end of the original RIPEMD160 hash at step 3
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
@@ -124,7 +124,7 @@ Next, we can convert this address back from base58 representation into bytes. Fo
 
 Now we have bytes `0004d9f11800433ffa31191755030eddf62556c570f1f60000`. We can split this up into three parts:
 * The version byte `00`.
-* The hash160 of our public key for our bitcoin address `0004d9f11800433ffa31191755030eddf62556c570`.
+* The hash160 of our public key for our bitcoin address `04d9f11800433ffa31191755030eddf62556c570`.
 * The four checksum bytes `f1f60000`.
 
 From here we can recalculate the **correct** checksum for the version byte and public point (21 bytes), as in Step 4 of generating an address.
