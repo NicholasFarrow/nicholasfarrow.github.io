@@ -87,7 +87,7 @@ With a `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5
 6. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
 7. Remove any extra leading 1's. In base58 a '1' represents a value of zero and thus has no value at the front of address. However, a leading '1' is included for each leading `00` byte.
-	* Nothing needs to be done to the address above as it only has one 1.
+	* Nothing needs to be done to the address above as it only has one 1 corresponding to the single 0x00 byte from our version byte.
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
 
 # Checking the Checkum
@@ -110,7 +110,7 @@ There is a smarter way to create a crazy address like `1YouTakeRiskWhenUseBitcoi
 4. Recalculate the checksum from the first 21 bytes, and use it to overwrite the laste 4 bytes.
 5. Converte the address bytes back to base58 format. 
 
-Some steps here will use some C programming, I'll try not to make it too technical. First we will **choose** our desired message, I'll go with `SendNickBitcoinPls`. 
+Some steps here will use some C programming, I'll try not to make it too technical. First we will **choose** our desired message, I'll go with `SendNickBitcoin`. 
 
 Next, we will put this into a format that resembles a bitcoin address,
 * Beginning with a `1`: `1SendNickBitcoin`
