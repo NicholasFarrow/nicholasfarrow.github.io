@@ -4,8 +4,8 @@ main:
     url: /about/
 # - title: "Sale"
 #    url: /Sale/
-  - title: "Résumé"
-    url: /assets/CV.pdf
+  - title: "CV"
+    url: /assets/resume.pdf
   - title: "Misc"
     url: /Misc/
 
