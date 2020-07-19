@@ -80,7 +80,7 @@ With a `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5
 3. Add a version byte in front of this to complete our address (`0x00` for main-net)
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
 4. To create a *checksum* we take the SHA-256 of this extended RIPEMD-160 hash **twice** and take the first 4 bytes
-	* `SHA256(SHA256(RIPEMD160(SHA256({0x00, public_key})))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
+	* `SHA256(SHA256(0x00 & RIPEMD160(SHA256(public_key)))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
 	* `c7f18fe8` is our checksum
 5. Add the checksum to the end of the original RIPEMD160 hash at step 3
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
