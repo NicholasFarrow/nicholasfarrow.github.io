@@ -5,7 +5,7 @@ main:
 # - title: "Sale"
 #    url: /Sale/
   - title: "Résumé"
-    url: /assets/resume.pdf
+    url: /assets/CV.pdf
   - title: "Misc"
     url: /Misc/
 
