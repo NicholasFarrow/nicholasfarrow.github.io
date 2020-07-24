@@ -216,6 +216,6 @@ This method, or a slight variation of, is how someone encoded a hidden message i
 
 If you found this useful, please consider supporting me in creating these tutorials:
 
-**BTC: 1NcEUAqEqni2m6sUugSfEi8cSHbUqmi3xZ**
+**BTC: bc1qhyew3uytqkgkwr3zdfy98pcf982swlyukrk4tn**
 
 **PLEASE** do not send bitcoin to any other address in this post, it will be lost, and I will be very angry that you've sent bitcoin to an address I just explained as forged and unspendable.
