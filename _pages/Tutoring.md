@@ -24,9 +24,7 @@ Previously I have worked for one of the largest tutoring companies in my area. I
 
 ![sqrt(nick)](/assets/images/sqrt_nick_smol.png){: style="float: right; margin-left: 1em;"}
 
-I generally charge $40-$60 per hour, though this depends on the subject and number of students. Please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant, I always prepare for my sessions beforehand. 
-
-I also accept Bitcoin at a 10% discount.
+For a quote please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
 
 
 # University Tutoring
@@ -34,23 +32,25 @@ Primarily I tutor mathematics and physics at all levels. I also tutor first year
 
 Though in the past I have tutored other subjects which I did not complete at university, such as basic machine learning and statistics with `R`. Please [contact me](mailto:nicholas.w.farrow@nickfarrow.com) to inquire about other subjects! Below are a list of some of the units I undertook at Monash University which I am comfortable tutoring:
 
-| Unit code | Unit title                                       | Mark | Grade |
-|-----------|--------------------------------------------------|------|-------|
-| FIT1045   | Introduction To Algorithms And Programming       | 94   | HD    |
-| PHS1011   | Classical Physics And Relativity                 | 74   | D     |
-| PHS1022   | Fields And Quantum Physics                       | 87   | HD    |
-| PHS2061   | Quantum And Thermal Physics                      | 82   | HD    |
-| PHS2081   | Atomic, Nuclear And Condensed Matter Physics     | 85   | HD    |
-| MTH1035   | Techniques For Modelling (Advanced)              | 83   | HD    |
-| MTH2021   | Linear Algebra With Applications                 | 84   | HD    |
-| MTH2222   | Mathematics Of Uncertainty                       | 94   | HD    |
-| MTH2032   | Differential Equations With Modelling            | 80   | HD    |
-| MTH3251   | Financial Mathematics                            | 86   | HD    |
-| MTH2232   | Mathematical Statistics                          | 76   | D     |
-| BIO1011   | Biology 1                                        | 86   | HD    |
-| CHM1011   | Chemistry 1                                      | 87   | HD    |
-| CHM1022   | Chemistry 2                                      | 82   | HD    |
-| SCI2015   | Scientific Practice And Communication (Advanced) | 87   | HD    |
+| Unit code | Unit title                                       | Grade |
+|-----------|--------------------------------------------------|-------|
+| FIT1045   | Introduction To Algorithms And Programming       | HD    |
+| PHS1011   | Classical Physics And Relativity                 | D     |
+| PHS1022   | Fields And Quantum Physics                       | HD    |
+| PHS2061   | Quantum And Thermal Physics                      | HD    |
+| PHS2081   | Atomic, Nuclear And Condensed Matter Physics     | HD    |
+| MTH1035   | Techniques For Modelling (Advanced)              | HD    |
+| MTH2021   | Linear Algebra With Applications                 | HD    |
+| MTH2222   | Mathematics Of Uncertainty                       | HD    |
+| MTH2032   | Differential Equations With Modelling            | HD    |
+| MTH3251   | Financial Mathematics                            | HD    |
+| MTH2232   | Mathematical Statistics                          | D     |
+| BIO1011   | Biology 1                                        | HD    |
+| CHM1011   | Chemistry 1                                      | HD    |
+| CHM1022   | Chemistry 2                                      | HD    |
+| SCI2015   | Scientific Practice And Communication (Advanced) | HD    |
+
+[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)
 
 # Highschool Tutoring (VCE & GAMSAT Medical Exam)
 I am proficient in tutoring highscool years 8-12 as well as students preparing for the GAMSAT. Year 11/12 subjects:
@@ -64,6 +64,8 @@ I am proficient in tutoring highscool years 8-12 as well as students preparing f
 | Biology                |
 | Physics                |
 
+[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)
+
 # Other Tutoring
 I also offer introductions to a number of other subjects. These subjects are a great choice to **keep your children occupied for a few hours!** In my opinion these are the sessions my students most enjoy, whilst also being highly valuable outside of school/uni:
 
@@ -72,3 +74,5 @@ I also offer introductions to a number of other subjects. These subjects are a g
 | Python (2 & 3, all areas)    |
 | HTML & CSS (Web design)       |
 | Linux (Installation & Basics) |
+
+[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)

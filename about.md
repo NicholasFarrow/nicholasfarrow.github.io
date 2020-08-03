@@ -8,7 +8,7 @@ classes: wide
 layout: single
 title: About
 ---
-## **I am currently looking to take on more work and projects**, please see my [résumé](/assets/resume.pdf) and [contact me](mailto:nicholas.w.farrow@gmail.com).
+## **I am currently looking to take on more work and projects**, please see my [CV](/assets/resume.pdf) and [contact me](mailto:nicholas.w.farrow@gmail.com).
 
 
 My name is Nick, I have recently:
