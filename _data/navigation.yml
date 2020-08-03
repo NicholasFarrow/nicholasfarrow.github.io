@@ -1,5 +1,7 @@
 #main links
 main:
+  - title: "Tutoring"
+    url: /Tutoring/
   - title: "About"
     url: /about/
 # - title: "Sale"
