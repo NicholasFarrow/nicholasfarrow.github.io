@@ -24,7 +24,7 @@ Previously I have worked for one of the largest tutoring companies in my area. I
 
 ![sqrt(nick)](/assets/images/sqrt_nick_smol.png){: style="float: right; margin-left: 1em;"}
 
-I generally charge $40-$60 per hour, though this depends on the subject and number of students. Please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your children needs tutoring in! Feel free to attach assignments or relevant, I always prepare for my sessions beforehand. I also accept Bitcoin at a 10% discount.
+I generally charge $40-$60 per hour, though this depends on the subject and number of students. Please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant, I always prepare for my sessions beforehand. I also accept Bitcoin at a 10% discount.
 
 
 
