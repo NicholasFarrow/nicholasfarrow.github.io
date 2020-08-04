@@ -24,13 +24,13 @@ Previously I have worked for one of the largest tutoring companies in my area. I
 
 ![sqrt(nick)](/assets/images/sqrt_nick_smol.png){: style="float: right; margin-left: 1em;"}
 
-For a quote please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
+For a quote please [email tutoring@nicholasfarrow.com](mailto:tutoring@nicholasfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
 
 
 # University Tutoring
 Primarily I tutor mathematics and physics at all levels. I also tutor first year biology, chemistry, and computer science.
 
-Though in the past I have tutored other subjects which I did not complete at university, such as basic machine learning and statistics with `R`. Please [contact me](mailto:nicholas.w.farrow@nickfarrow.com) to inquire about other subjects! Below are a list of some of the units I undertook at Monash University which I am comfortable tutoring:
+Though in the past I have tutored other subjects which I did not complete at university, such as basic machine learning and statistics with `R`. Please [contact me](tutoring@nicholasfarrow.com) to inquire about other subjects! Below are a list of some of the units I undertook at Monash University which I am comfortable tutoring:
 
 | Unit code | Unit title                                       | Grade |
 |-----------|--------------------------------------------------|-------|
@@ -50,7 +50,7 @@ Though in the past I have tutored other subjects which I did not complete at uni
 | CHM1022   | Chemistry 2                                      | HD    |
 | SCI2015   | Scientific Practice And Communication (Advanced) | HD    |
 
-[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)
+[Contact me!](tutoring@nicholasfarrow.com)
 
 # Highschool Tutoring (VCE & GAMSAT Medical Exam)
 I am proficient in tutoring highscool years 8-12 as well as students preparing for the GAMSAT. Year 11/12 subjects:
@@ -64,7 +64,7 @@ I am proficient in tutoring highscool years 8-12 as well as students preparing f
 | Biology                |
 | Physics                |
 
-[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)
+[Contact me!](tutoring@nicholasfarrow.com)
 
 # Other Tutoring
 I also offer introductions to a number of other subjects. These subjects are a great choice to **keep your children occupied for a few hours!** In my opinion these are the sessions my students most enjoy, whilst also being highly valuable outside of school/uni:
@@ -75,4 +75,4 @@ I also offer introductions to a number of other subjects. These subjects are a g
 | HTML & CSS (Web design)       |
 | Linux (Installation & Basics) |
 
-[Contact me!](mailto:nicholas.w.farrow@nickfarrow.com)
+[Contact me!](tutoring@nicholasfarrow.com)
