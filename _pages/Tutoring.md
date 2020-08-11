@@ -2,7 +2,7 @@
 title: "Tutoring"
 layout: posts
 author_profile: true
-permalink: /Tutoring/
+permalink: /tutoring/
 
 excerpt: "Maths, Physics, Programming tutoring with Nick."
 
