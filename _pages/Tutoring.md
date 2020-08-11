@@ -53,7 +53,7 @@ Though in the past I have tutored other subjects which I did not complete at uni
 [Contact me!](tutoring@nicholasfarrow.com)
 
 # Highschool Tutoring (VCE & GAMSAT Medical Exam)
-I am proficient in tutoring highscool years 8-12 as well as students preparing for the GAMSAT. Year 11/12 subjects:
+I am proficient in tutoring highscool, and have experience with years 8-12 as well as students preparing for the GAMSAT. Year 11/12 subjects:
 
 | VCE Subject            |
 |------------------------|
