@@ -108,7 +108,7 @@ There is a smarter way to create a crazy address like `1YouTakeRiskWhenUseBitcoi
 1. Decide upon the text we wish to include in our address.
 2. Pad the address up to 33 characters.
 3. Convert this base58 address back into bytes.
-4. Recalculate the checksum from the first 21 bytes, and use it to overwrite the laste 4 bytes.
+4. Recalculate the checksum from the first 21 bytes, and use it to overwrite the last 4 bytes.
 5. Converte the address bytes back to base58 format. 
 
 Some steps here will use some C programming, I'll try not to make it too technical. First we will **choose** our desired message, I'll go with `SendNickBitcoin`. 
