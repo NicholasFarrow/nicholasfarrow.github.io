@@ -22,8 +22,6 @@ comments: true
 ---
 Previously I have worked for one of the largest tutoring companies in my area. I offer highschool & university level tutoring for individuals, and also groups at a discounted rate (~4 max). I also offer introductory sessions to subjects like Python programming, HTML & CSS webdesign, and Linux. 
 
-#![sqrt(nick)](/assets/images/sqrt_nick_smol.png){: style="float: right; margin-left: 1em;"}
-
 For a quote please [email tutoring@nicholasfarrow.com](mailto:tutoring@nicholasfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
 
 
