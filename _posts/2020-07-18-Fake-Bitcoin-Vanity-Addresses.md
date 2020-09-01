@@ -99,7 +99,7 @@ The *checksum* is the last few digits of the address and allows anyone to confir
 # Faking Vanity
 OK, so it would be impossible to create a vanity address this long legitimately. But can we fake one? Even though we will not have the private key to this address, and the bitcoin recieved will be **unspendable**, can we forge these addresses in order to send a message?
 
-Welli, the checksum also means it is very difficult to enter 33-34 characters and for the checksum requirements to be satisfied. Infact, given there are 4 bytes (32 bits) dedicated to the checkum, there is a $$ (1/16)^8 = (1/2)^{32} $$ chance or $$ 1 $$ in $$ 4,294,967,296 $$ of the checksum matching the other 21 bytes.
+Well, the checksum also means it is very difficult to enter 33-34 characters and for the checksum requirements to be satisfied. Infact, given there are 4 bytes (32 bits) dedicated to the checkum, there is a $$ (1/16)^8 = (1/2)^{32} $$ chance or $$ 1 $$ in $$ 4,294,967,296 $$ of the checksum matching the other 21 bytes.
 
 This could be brute forced, by designing a ~30 character long message and randomly trying a few billion combinations of the last characters would work, but very very slowly.
 

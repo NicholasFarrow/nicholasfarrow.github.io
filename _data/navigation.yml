@@ -1,7 +1,7 @@
 #main links
 main:
-  - title: "Tutoring"
-    url: /tutoring/
+  - title: "BTCMessage"
+    url: https://btcmessage.com
   - title: "About"
     url: /about/
 # - title: "Sale"
