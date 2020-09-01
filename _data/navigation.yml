@@ -8,8 +8,6 @@ main:
 #    url: /Sale/
   - title: "CV"
     url: /assets/resume.pdf
-  - title: "Misc"
-    url: /misc/
 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
