@@ -71,7 +71,7 @@ The address format used by the message sender was 'legacy' P2PKH implimented by 
 
 
 ## P2PKH Technical Details (can skip over, 4 & 5 relevant)
-For a complete tutorial on how this works, please see [https://nicholasfarrow.com/Cryptography-in-Bitcoin-with-C/](https://nicholasfarrow.com/Cryptography-in-Bitcoin-with-C/).
+For a complete tutorial on how this works, please see [https://nickfarrow.com/Cryptography-in-Bitcoin-with-C/](https://nickfarrow.com/Cryptography-in-Bitcoin-with-C/).
 
 With a `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2352`:
 1. Calculate the SHA-256 hash of the public key
