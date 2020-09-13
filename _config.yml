@@ -22,7 +22,7 @@ title                    : "nick"
 title_separator          : "//"
 name                     : "Nick Farrow"
 description              : "Posts & Tutorials about Unix, Python, Gravitational Waves, and other Physics by Nick"
-url                      : "https://nicholasfarrow.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://nickfarrow.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/teaser.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -101,7 +101,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-139357903-2"
     anonymize_ip         : false # true, false (default)
@@ -132,7 +132,7 @@ author:
       #url: "https://instagram.com/farrow_"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:nick@nicholasfarrow.com
+      url: mailto:nick@nickfarrow.com
 # Site Footer
 footer:
   links:
