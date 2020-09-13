@@ -2,6 +2,8 @@
 main:
   - title: "BTCMessage"
     url: https://btcmessage.com
+  - title: "₿ Node"
+    url : https://node.nickfarrow.com
   - title: "About"
     url: /about/
 # - title: "Sale"
