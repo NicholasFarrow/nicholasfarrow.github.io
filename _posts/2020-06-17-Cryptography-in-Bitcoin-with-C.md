@@ -72,6 +72,7 @@ It is a complicated scheme! But it includes several very useful features which a
 The *checksum* allows anyone to confirm that this public address is a legitimate address. If someone sends us an address, we can verify by performing steps 4 & 5 on the first 21 bytes, and then **check** that the last 4 bytes of the address are correct. This is most useful when entering a public address by hand where most wallets will prevent you from attempting to send bitcoin to an illegitimate address.
 
 ## Base 58
+**1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7**
 Base58 might seem like a weird way to represent addresses at first, but it has some properties that make it advantageous over a decimal 0-9 representation. The first is that using a number system with a high base allows for shorter representation of large integers. For example, the number 1337 in binary would look like `10100111001` in binary (base 2) but looks like `Q4` in base 58. As bitcoin addresses are technically just very large integers, this makes sending and reading addresses much simpler.
 
 A computationally inclined person may ask, why not use something more natural like base64? Well base58 uses every number, lowercase letter, and upercase letter **except** for characters that can easily be mistaken (0, O, I, l). Note $$2\times26 + 10 - 4 = 58$$. Removing these confusing characters makes it much less likely for Bitcoin addresses to be entered incorrectly.
