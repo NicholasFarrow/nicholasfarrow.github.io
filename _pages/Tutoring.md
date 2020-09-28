@@ -22,7 +22,7 @@ comments: true
 ---
 Previously I have worked for one of the largest tutoring companies in my area. I offer highschool & university level tutoring for individuals, and also groups at a discounted rate (~4 max). I also offer introductory sessions to subjects like Python programming, HTML & CSS webdesign, and Linux. 
 
-For a quote please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject you or your child needs tutoring in! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
+For a quote please [email tutoring@nickfarrow.com](mailto:tutoring@nickfarrow.com) with the subject of your tutoring needs! Feel free to attach assignments or relevant coursework, I always prepare for my sessions beforehand.
 
 
 # University Tutoring
@@ -30,23 +30,22 @@ Primarily I tutor mathematics and physics at all levels. I also tutor first year
 
 Though in the past I have tutored other subjects which I did not complete at university, such as basic machine learning and statistics with `R`. Please [contact me](tutoring@nickfarrow.com) to inquire about other subjects! Below are a list of some of the units I undertook at Monash University which I am comfortable tutoring:
 
-| Unit code | Unit title                                       | Grade |
-|-----------|--------------------------------------------------|-------|
-| FIT1045   | Introduction To Algorithms And Programming       | HD    |
-| PHS1011   | Classical Physics And Relativity                 | D     |
-| PHS1022   | Fields And Quantum Physics                       | HD    |
-| PHS2061   | Quantum And Thermal Physics                      | HD    |
-| PHS2081   | Atomic, Nuclear And Condensed Matter Physics     | HD    |
-| MTH1035   | Techniques For Modelling (Advanced)              | HD    |
-| MTH2021   | Linear Algebra With Applications                 | HD    |
-| MTH2222   | Mathematics Of Uncertainty                       | HD    |
-| MTH2032   | Differential Equations With Modelling            | HD    |
-| MTH3251   | Financial Mathematics                            | HD    |
-| MTH2232   | Mathematical Statistics                          | D     |
-| BIO1011   | Biology 1                                        | HD    |
-| CHM1011   | Chemistry 1                                      | HD    |
-| CHM1022   | Chemistry 2                                      | HD    |
-| SCI2015   | Scientific Practice And Communication (Advanced) | HD    |
+| Unit code | Unit title                                       |
+|-----------|--------------------------------------------------|
+| FIT1045   | Introduction To Algorithms And Programming       |
+| PHS1011   | Classical Physics And Relativity                 |
+| PHS1022   | Fields And Quantum Physics                       |
+| PHS2061   | Quantum And Thermal Physics                      |
+| MTH1035   | Techniques For Modelling (Advanced)              |
+| MTH2021   | Linear Algebra With Applications                 |
+| MTH2222   | Mathematics Of Uncertainty                       |
+| MTH2032   | Differential Equations With Modelling            |
+| MTH3251   | Financial Mathematics                            |
+| MTH2232   | Mathematical Statistics                          |
+| BIO1011   | Biology 1                                        |
+| CHM1011   | Chemistry 1                                      |
+| CHM1022   | Chemistry 2                                      |
+| SCI2015   | Scientific Practice And Communication (Advanced) |
 
 [Contact me!](tutoring@nickfarrow.com)
 
