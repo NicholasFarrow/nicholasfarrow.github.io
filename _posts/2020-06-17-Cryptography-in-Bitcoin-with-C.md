@@ -6,9 +6,9 @@ last_modified_at: 2020-06-17T03:20:02-05:00
 date: 2020-04-25
 excerpt: "How to create a legacy Bitcoin address from scratch with basic-intermediate C programming, using public key cryptography, hashing functions, and base 58."
 header:
-  teaser: "/assets/images/btcTeaser.png"
-  og_image: "/assets/images/btcTeaser.png"
-  overlay_image : "/assets/images/btcHeader.png"
+  teaser: "/assets/images/ritchie_btc_boomer.png"
+  og_image: "/assets/images/ritchie_btc_boomer.png"
+  image : "/assets/images/ritchie_btc_boomer2.png"
   caption: "©Coindesk"
   show_overlay_excerpt: false
 
