@@ -9,7 +9,7 @@ header:
   teaser: "/assets/images/ritchie_btc_boomer.png"
   og_image: "/assets/images/ritchie_btc_boomer.png"
   image : "/assets/images/ritchie_btc_boomer2.png"
-  caption: "©Coindesk"
+  caption: "ritchie and thompson"
   show_overlay_excerpt: false
 
 layout: single
