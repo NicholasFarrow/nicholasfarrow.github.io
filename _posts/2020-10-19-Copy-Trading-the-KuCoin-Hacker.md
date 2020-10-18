@@ -50,7 +50,7 @@ Despite the small batch size of each sell (few thousand USD at a time), the pric
 Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily volumes (~$5,000) and the hacker was attempting to sell MILLIONS of dollars worth quickly. Naturually, the thin orderbooks for these tokens could not support this immense selling pressure and these tokens were now on a firesale or deservingly rekt depending on your opinion of their value.
 
 # Copy Trading
-Quickly noticing the selling and token dumping patterns, I wrote a [basic python script](/assets/addresswatch.py) to monitor the hacker's main token address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) for the inital withdrawals to other addresses, from which the selling on Uniswap would then begin.
+Quickly noticing the selling and token dumping patterns, I wrote a [basic python script](/assets/addresswatch.py.txt) to monitor the hacker's main token address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) for the inital withdrawals to other addresses, from which the selling on Uniswap would then begin.
 
 <audio controls>
     <source src="/assets/images/kucoin/gold_please.mp3" type="audio/mpeg">
