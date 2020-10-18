@@ -32,11 +32,11 @@ Just one day after stealing the funds the hacker began selling the >$100m Ethere
 
 ![first selling](/assets/images/kucoin/ocean.png)
 
-Here we see the first instance of selling, the hacker withdraws a portion of the tokens from the main address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) to another address where they then do a test sell of 100 OCEAN on the Uniswap contract. Once they have confirmed the test sell was successsful they continue to sell the rest of tokens. These test sells happened for a majority of the tokens the hacker sold and it gave me a few minutes edge on the market, forseeing that a sale was about to occur.
+Here we see the first instance of selling, the hacker withdraws a portion of the tokens from the main address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) to another address where they then do a test sell of 100 OCEAN on the Uniswap contract. Once they have confirmed the test sell was successful they continue to sell the rest of tokens. These test sells happened for a majority of the tokens the hacker sold and it gave me a few minutes edge on the market, foreseeing that a sale was about to occur.
 
-Uniswap is a fully decentralised protocol which allows for switching between Ethereum tokens, in this case OCEAN -> ETH. As Uniswap is truely decentralised, censoring the hacker is impossible. However, for some of the more centralised shitcoins, developers were able to manually call functions within the Ethereum smart contracts in order to recover/freeze the tokens.
+Uniswap is a fully decentralised protocol which allows for switching between Ethereum tokens, in this case OCEAN -> ETH. As Uniswap is truly decentralised, censoring the hacker is impossible. However, for some of the more centralised shitcoins, developers were able to manually call functions within the Ethereum smart contracts in order to recover/freeze the tokens.
 
-The hacker had huge quantities of some tokens, often controlling 1-3% of a token's entire supply. In an attempt to not crash token prices by dumping huge quantities on thin orderbooks, the hacker would sell the stolen tokens in small batches after completing the test sell. This appeared to be the work of one person, selling semiregular batches of a token every 1-2 minutes; but sometimes with short breaks. Later on, you could actually observe the hacker getting less precise through their typos in transaction amounts, and they became increasingly distractacted as the time gaps between sells grew.
+The hacker had huge quantities of some tokens, often controlling 1-3% of a token's entire supply. In an attempt to not crash token prices by dumping huge quantities on thin orderbooks, the hacker would sell the stolen tokens in small batches after completing the test sell. This appeared to be the work of one person, selling semiregular batches of a token every 1-2 minutes; but sometimes with short breaks. Later on, you could actually observe the hacker getting less precise through their typos in transaction amounts, and they became increasingly distracted as the time gaps between sells grew.
 
 ![mana selling](/assets/images/kucoin/MANA.png)
 
@@ -46,10 +46,10 @@ Despite the small batch size of each sell (few thousand USD at a time), the pric
 
 *The red lines mark the period for which the hacker was selling DIA, note how the absence of selling also marks a bottom!*
 
-Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily volumes (~$5,000) and the hacker was attempting to sell MILLIONS of dollars worth quickly. Naturually, the thin orderbooks for these tokens could not support this immense selling pressure and these tokens were now on a firesale or deservingly rekt depending on your opinion of their value.
+Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily volumes (~$5,000) and the hacker was attempting to sell MILLIONS of dollars worth quickly. Naturually, the thin orderbooks for these tokens could not support this immense selling pressure and these tokens were now on a firesale or deservedly rekt depending on your opinion of their value.
 
 # Copy Trading
-Quickly noticing the selling and token dumping patterns, I wrote a [basic python script](/assets/addresswatch.py.txt) to monitor the hacker's main token address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) for the inital withdrawals to other addresses, from which the selling on Uniswap would then begin.
+Quickly noticing the selling and token dumping patterns, I wrote a [basic python script](/assets/addresswatch.py.txt) to monitor the hacker's main token address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) for the initial withdrawals to other addresses, from which the selling on Uniswap would then begin.
 
 <audio controls>
     <source src="/assets/images/kucoin/gold_please.mp3" type="audio/mpeg">
