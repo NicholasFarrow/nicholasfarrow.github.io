@@ -96,9 +96,7 @@ All this information is openly accessible on the Ethereum blockchain, therefore 
 * Weak hand token 'holders' who panic dumped their investment. From the tokens I have checked, all have recovered from this short term crash.
 At one point I joined one of the token's investing groupchat where I saw many people excited for the opportunity to to invest in the project at a discounted price (perhaps a cope but they would've made it if they bought the bottom).
 
-I don't trade very often, but this was a a great and very fortunate way to stack more bitcoin sats.
-
-If you found this useful (or perhaps even profitable!), please consider supporting me:
+I don't trade very often, but this was a very fortunate low-risk way to stack a little more bitcoin. If you found this useful (or perhaps even profitable!), please consider supporting me:
 
 **BTC: bc1qxqf3w0hd2x0zuhs82utvxrk435yzlw05w9t87s**
 
