@@ -23,7 +23,6 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
-# KuCoin Hack
 On the 25th of September the cryptocurrency exchange KuCoin was hacked for over $200M worth of Bitcoin, Ethereum, and ERC-20 tokens. By gaining access to the private key of KuCoin's *hot wallet*, the wallet used for day-to-day withdrawals and transactions, the hacker was able to completely drain the funds into addresses they controlled. In this post I explain how profited from this unfortunate but avoidable event.
 
 Note: It appears the [has been caught](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this.
