@@ -4,7 +4,7 @@ title: "Copy Trading the KuCoin Hacker for Easy Profit"
 author_profile: true
 last_modified_at: 2020-10-19T03:20:02-05:00
 date: 2020-10-19
-excerpt: "I spent two weeks copy trading the KuCoin hacker for absolute bank. High leverage ape style."
+excerpt: "I spent two weeks copy trading the KuCoin hacker for absolute bank, high leverage ape style."
 header:
   teaser: "/assets/images/kucoin/teaser2.png"
   og_image: "/assets/images/kucoin/teaser2.png"
@@ -23,20 +23,20 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
-On the 25th of September the cryptocurrency exchange KuCoin was hacked for over $200M worth of Bitcoin, Ethereum, and ERC-20 tokens. By gaining access to the private key of KuCoin's *hot wallet*, the wallet used for day-to-day withdrawals and transactions, the hacker was able to completely drain the funds into addresses they controlled. In this post I explain how profited from this unfortunate but avoidable event.
+On the 25th of September the cryptocurrency exchange KuCoin was hacked for over $200M worth of Bitcoin, Ethereum, and ERC-20 tokens. By gaining access to the private key of KuCoin's *hot wallet*, the wallet used for day-to-day withdrawals and transactions, the hacker was able to completely drain the funds into addresses they controlled. In this post I explain how noticing a pattern in the hacker's behaviour and a quick python script allowed me to earn some sweet satoshis from this unfortunate event.
 
 Note: It appears the [has been caught](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this.
 
 # Observing the Wild Hacker
-Just one day after stealing the funds the hacker began selling the >$100m Ethereum ERC-20 tokens, starting with Ocean and Sythetix Network Token. Selling patterns emerged early on:
+Just one day after stealing the funds, the hacker began selling the >$100m stolen Ethereum ERC-20 tokens, starting with Ocean and Sythetix Network Token. Selling patterns emerged early on:
 
 ![first selling](/assets/images/kucoin/ocean.png)
 
 Here we see the first instance of selling, the hacker withdraws a portion of the tokens from the main address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) to another address where they then do a test sell of 100 OCEAN on the Uniswap contract. Once they have confirmed the test sell was successful they continue to sell the rest of tokens. These test sells happened for a majority of the tokens the hacker sold and it gave me a few minutes edge on the market, foreseeing that a sale was about to occur.
 
-Uniswap is a fully decentralised protocol which allows for switching between Ethereum tokens, in this case OCEAN -> ETH. As Uniswap is truly decentralised, censoring the hacker's trades is impossible. However, for some of the more centralised shitcoins, developers were able to manually call functions within the Ethereum smart contracts in order to recover/freeze the tokens.
+Uniswap is a fully decentralised protocol for liquidity provision, i.e. facilitates trading/switching between Ethereum tokens, in this case the hacker was selling their tokens for ETH. As Uniswap is truly decentralised, censoring the hacker's trades is impossible. However, for some of the more centralised shitcoins, developers manually called functions within the Ethereum smart contracts in order to recover/freeze the tokens.
 
-The hacker had huge quantities of some tokens, often controlling 1-3% of a token's entire supply. In an attempt to not crash token prices by dumping huge quantities on thin orderbooks, the hacker would sell the stolen tokens in small batches after completing the test sell. This appeared to be the work of one person, selling semiregular batches of a token every 1-2 minutes; but sometimes with short breaks. Later on, you could actually observe the hacker getting less precise through their typos in transaction amounts, and they became increasingly distracted as the time gaps between sells grew.
+The hacker had **huge** quantities of tokens, often controlling 1-3% of a token's entire supply. In an attempt to not crash token prices by dumping huge quantities on thin orderbooks, the hacker would sell the stolen tokens in small batches after completing the test sell. This appeared to be the work of one person, selling semiregular batches of a token every 1-2 minutes; but sometimes with short breaks. Later on, you could actually observe the hacker getting less precise through their typos in transaction amounts, and they became increasingly distracted as the time gaps between sells grew.
 
 ![mana selling](/assets/images/kucoin/MANA.png)
 
@@ -44,7 +44,7 @@ Despite the small batch size of each sell (few thousand USD at a time), the pric
 
 ![DIA chart](/assets/images/kucoin/DIA2.png)
 
-*The red lines mark the period for which the hacker was selling DIA, note how the absence of selling also marks a bottom!*
+*The red lines mark the period for which the hacker was selling DIA, note how the absence of the hacker selling also marks a bottom!*
 
 Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily volumes (~$5,000) and the hacker was attempting to sell MILLIONS of dollars worth quickly. Naturally, the thin orderbooks for these tokens could not support this immense selling pressure and these tokens were now on a firesale or deservedly rekt depending on your opinion of their value.
 
@@ -79,7 +79,7 @@ My strategy became:
 7. Grab a beer and watch my profit/loss climb to hundreds of percent.
 8. Watch until the hacker has stops selling, and then market-buy close my position in a similar way to how I entered.
 
-Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
+For two weeks I carried my laptop everywhere, even to a beach at one stage, connected to my mobile hotspot the script would alert me at any time of day. Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
 
 ![DMM chart 2](/assets/images/kucoin/DMMAPE.png)
 
