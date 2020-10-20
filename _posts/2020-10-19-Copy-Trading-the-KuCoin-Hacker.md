@@ -71,7 +71,7 @@ In order to profit from this price action, I needed a way to short the tokens. S
 
 My strategy became:
 1. Hear alarm, wake up & run over to laptop.
-2. Check the transaction to see what token is being moved. Then, check if the token trades on FTX. **Make a rough 10-second assessment of downside potential**; DMM had $$\frac{\text{hacker token value}}{\text{daily traded volume}}\approx\frac{\$1M}{\$2.4M}$$ and a $$\$38M$$ circulating supply was insane. Other tokens were similar.
+2. Check the transaction to see what token is being moved. Then, check if the token trades on FTX. **Make a rough 10-second assessment of downwards potential**; DMM had $$\frac{\text{hacker token value}}{\text{daily traded volume}}\approx\frac{\$1M}{\$2.4M}$$ and a $$\$38M$$ circulating supply was insane. Other tokens were similar.
 3. Place a $25k reduce-only stop loss slightly above the current token price in order to manage downside risk.
 4. Market sell roughly 1/3 of my desired position size.
 5. Wait a few seconds, allowing for algos/bots to fill up the bid side of the orderbook again so that there is some decent depth for my subsequent trades to fill into.
