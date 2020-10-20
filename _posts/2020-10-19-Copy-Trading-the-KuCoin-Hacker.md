@@ -71,8 +71,8 @@ In order to profit from this price action, I needed a way to short the tokens. S
 
 My strategy became:
 1. Hear alarm, wake up & run over to laptop.
-2. Check the transaction to see what token is being moved. Then, check if the token trades on FTX.
-3. If so, place a $25k reduce-only stop loss slightly above the current token price in order to manage downside risk.
+2. Check the transaction to see what token is being moved. Then, check if the token trades on FTX. **Make a rough 10-second assessment of downside potential**; DMM had $$\frac{\text{hacker token value}}{\text{daily traded volume}}\approx\frac{\$1M}{\$2.4M}$$ and a $$\$38M$$ circulating supply was insane. Other tokens were similar.
+3. Place a $25k reduce-only stop loss slightly above the current token price in order to manage downside risk.
 4. Market sell roughly 1/3 of my desired position size.
 5. Wait a few seconds, allowing for algos/bots to fill up the bid side of the orderbook again so that there is some decent depth for my subsequent trades to fill into.
 6. Market sell again to increase my position size. Repeat until position is complete.
@@ -95,7 +95,7 @@ While in some sense this is profiting from the exchange heist, all this informat
 * Weak hand token 'holders' who panic dumped their investment. From the tokens I have checked, all have recovered from this short term crash.
 At one point I joined one of the token's investing groupchat where I saw many people excited for the opportunity to to invest in the project at a discounted price (perhaps a cope but they would've made it if they bought the bottom).
 
-I don't trade very often, but this was a very fortunate low-risk way to stack a little more bitcoin. If you found this useful (or perhaps even profitable!), please consider supporting me:
+I don't trade very often, but this was a very fortunate low-risk way to stack a little more bitcoin. If you found this useful or perhaps even profitable, please consider supporting me:
 
 **BTC: bc1qxqf3w0hd2x0zuhs82utvxrk435yzlw05w9t87s**
 
