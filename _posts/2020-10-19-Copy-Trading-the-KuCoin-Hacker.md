@@ -30,7 +30,7 @@ Note: It appears the [has been caught](https://news.bitcoin.com/kucoin-ceo-says-
 # Observing the Wild Hacker
 Just one day after stealing the funds, the hacker began selling the >$100m stolen Ethereum ERC-20 tokens, starting with Ocean and Sythetix Network Token. Selling patterns emerged early on:
 
-![first selling](/assets/images/kucoin/ocean.png)
+![first selling](/assets/images/kucoin/initialSells.png)
 
 Here we see the first instance of selling, the hacker withdraws a portion of the tokens from the main address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) to another address where they then do a test sell of 100 OCEAN on the Uniswap contract. Once they have confirmed the test sell was successful they continue to sell the rest of tokens. These test sells happened for a majority of the tokens the hacker sold and it gave me a few minutes edge on the market, foreseeing that a sale was about to occur.
 
