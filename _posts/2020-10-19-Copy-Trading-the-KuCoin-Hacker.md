@@ -79,7 +79,7 @@ My strategy became:
 7. Grab a beer and watch my profit/loss climb to hundreds of percent.
 8. Watch until the hacker has stops selling, and then market-buy close my position in a similar way to how I entered.
 
-For two weeks I carried my laptop everywhere, even to a beach at one stage, connected to my mobile hotspot the script would alert me at any time of day. Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
+For two weeks I carried my laptop everywhere (not far due to COVID lockdown), even to the beach at one stage, connected to my mobile hotspot the script would alert me at any time of day. Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
 
 ![DMM chart 2](/assets/images/kucoin/DMMAPE.png)
 
