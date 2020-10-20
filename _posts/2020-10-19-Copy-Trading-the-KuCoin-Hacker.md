@@ -72,14 +72,14 @@ In order to profit from this price action, I needed a way to short the tokens. S
 My strategy became:
 1. Hear alarm, wake up & run over to laptop.
 2. Check the transaction to see what token is being moved. Then, check if the token trades on FTX. **Make a rough 10-second assessment of downwards potential**; DMM had $$\frac{\text{hacker token value}}{\text{daily traded volume}}\approx\frac{\$1M}{\$2.4M}$$ and a $$\$38M$$ circulating supply was insane. Other tokens were similar.
-3. Place a $25k reduce-only stop loss slightly above the current token price in order to manage downside risk.
-4. Market sell roughly 1/3 of my desired position size.
-5. Wait a few seconds, allowing for algos/bots to fill up the bid side of the orderbook again so that there is some decent depth for my subsequent trades to fill into.
-6. Market sell again to increase my position size. Repeat until position is complete.
+3. Place a reduce-only stop-market buy order ~1-2% above the current token price in order to manage downside risk. The amount should be greater than the desired position size, and will close my order in the worst case scenario of a price jump.
+4. Market sell roughly 1/3 of my desired position size. If I want to open a $25k position, I make 3x $8.3k market sells orders.
+5. Wait a few seconds before the next order, allowing for algos/bots to fill up the bid side of the orderbook again so that there is some decent depth for my next trade to fill into.
+6. Market sell again to increase my position size. Repeat, until position is completely opened. You could spread your entry over more/less than 3 orders, depending on orderbook depth and time preferece. I chose time.
 7. Grab a beer and watch my profit/loss climb to hundreds of percent.
 8. Watch until the hacker has stops selling, and then market-buy close my position in a similar way to how I entered.
 
-For two weeks I carried my laptop everywhere (not far due to COVID lockdown), even to the beach at one stage, connected to my mobile hotspot the script would alert me at any time of day. Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
+Sometimes the price would start dumping only a matter of seconds after I had opened my positions. Thus it was integral that I opened my position as soon as possible, regardless of small deviations in entry price. For two weeks I carried my laptop everywhere (not far due to COVID lockdown), even to the beach at one stage, connected to my mobile hotspot the script would alert me at any time of day. Me aping in & aping out is why you can see noticable slippage and a huge spike in volume, I'm the market now.
 
 ![DMM chart 2](/assets/images/kucoin/DMMAPE.png)
 
