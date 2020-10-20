@@ -30,7 +30,7 @@ However over $1.3M USD (3,700 ETH) continues to be actively mixed using Tornado 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">⚠ 100 <a href="https://twitter.com/hashtag/ETH?src=hash&amp;ref_src=twsrc%5Etfw">#ETH</a> (37,332 USD) of stolen funds transferred from Kucoin Hack 2020 to Tornado Cash<br><br>Tx: <a href="https://t.co/WlgR9VsBKf">https://t.co/WlgR9VsBKf</a></p>&mdash; Whale Alert (@whale_alert) <a href="https://twitter.com/whale_alert/status/1318104112660172800?ref_src=twsrc%5Etfw">October 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Note Lyu's use of plural *'suspects'*. Despite being over two weeks of law enforcement being *'officially involved to take action'*, it appears at least one hacker or accomplice is yet to be apprehended. This also raises some doubt as to whether **any** of the suspects have actually been identified or caught at all. While Lyu states there is *'substantial proof'* for action, there have been no news headlines or KuCoin statements since.
+Note Lyu's use of plural *'suspects'*. Despite being over two weeks of law enforcement being *'officially involved to take action'*, it appears at least one hacker or accomplice is yet to be apprehended. This also raises doubt as to whether any of the suspects have actually been detained. While Lyu states there is *'substantial proof'* for action, there have been no news headlines or KuCoin statements since.
 
 ![mixed loot](/assets/images/kucoin/lootmix1.png)
 
