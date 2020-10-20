@@ -90,7 +90,7 @@ The hacker seems to have stopped selling for now, but this script and strategy w
 ![trades](/assets/images/kucoin/wins.png)
 
 # Is this legal/moral?
-All this information is openly accessible on the Ethereum blockchain, therefore it does not meet the definition for front-running nor insider trading. The people on the other side of my trade were likely either:
+While in some sense this is profiting from the exchange heist, all this information is openly accessible on the Ethereum blockchain, therefore it does not meet the definition for front-running nor insider trading. The people on the other side of my trade were likely either:
 * Turkey bots and algos that were not anticipating thanksgiving.
 * Weak hand token 'holders' who panic dumped their investment. From the tokens I have checked, all have recovered from this short term crash.
 At one point I joined one of the token's investing groupchat where I saw many people excited for the opportunity to to invest in the project at a discounted price (perhaps a cope but they would've made it if they bought the bottom).
@@ -100,6 +100,8 @@ I don't trade very often, but this was a very fortunate low-risk way to stack a 
 **BTC: bc1qxqf3w0hd2x0zuhs82utvxrk435yzlw05w9t87s**
 
 [Sign up for FTX.com](https://ftx.com/#a=apePost) if you haven't already.
+
+**Don't forget to share with your degenerate crypto trading friends :)**
 
 <!-- Initially routine, but started to switch it up and get lazy/distracted. Selling at an impossibly slow speed.
 # Liquid Knives check the Prize
