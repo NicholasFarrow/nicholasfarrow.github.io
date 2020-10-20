@@ -4,6 +4,12 @@ title: "KuCoin Hackers Apparently Found, But They're Still Mixing Loot"
 author_profile: true
 last_modified_at: 2020-10-20T03:20:02-05:00
 date: 2020-10-20
+excerpt: "KuCoin CEO announced the hackers have been found, but you can see they're still mixing more than $2M USD  of stolen funds with Tornado Cash."
+header:
+  teaser: "/assets/images/kucoin/kucoinpost2header.png"
+  og_image: "/assets/images/kucoin/kucoinpost2header.png"
+  image: "/assets/images/kucoin/kucoinpost2head.png"
+  show_overlay_excerpt: false
 
 layout: single
 classes: wide
