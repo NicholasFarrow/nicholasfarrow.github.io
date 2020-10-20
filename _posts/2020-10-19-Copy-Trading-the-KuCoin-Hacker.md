@@ -4,7 +4,7 @@ title: "Copy Trading the KuCoin Hacker for Easy Profit"
 author_profile: true
 last_modified_at: 2020-10-19T03:20:02-05:00
 date: 2020-10-19
-excerpt: "I spent two weeks copy trading the KuCoin hacker for absolute bank, high leverage ape style."
+excerpt: "I spent two weeks copy trading the KuCoin hacker on FTX for absolute bank. High leverage great ape."
 header:
   teaser: "/assets/images/kucoin/teaser2.png"
   og_image: "/assets/images/kucoin/teaser2.png"
@@ -44,7 +44,7 @@ Despite the small batch size of each sell (few thousand USD at a time), the pric
 
 ![DIA chart](/assets/images/kucoin/DIA2.png)
 
-*The red lines mark the period for which the hacker was selling DIA, note how the absence of the hacker selling also marks a bottom!*
+*The red lines mark the period for which the hacker was selling DIA, note how the absence of the hacker selling also marks the exact bottom!*
 
 Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily volumes (~$5,000) and the hacker was attempting to sell MILLIONS of dollars worth quickly. Naturally, the thin orderbooks for these tokens could not support this immense selling pressure and these tokens were now on a firesale or deservedly rekt depending on your opinion of their value.
 
@@ -52,10 +52,10 @@ Like DIA, many of the sold tokens had small market caps (~$10m) with tiny daily 
 Quickly noticing the selling and token dumping patterns, I wrote a [basic python script](/assets/addresswatch.py.txt) to monitor the hacker's main token address ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) for the initial withdrawals to other addresses, from which the selling on Uniswap would then begin.
 
 <audio controls>
-    <source src="/assets/images/kucoin/gold_please.mp3" type="audio/mpeg">
+    <source src="/assets/images/kucoin/ally.mp3" type="audio/mpeg">
 </audio>
 <audio controls>
-    <source src="/assets/images/kucoin/ally.mp3" type="audio/mpeg">
+    <source src="/assets/images/kucoin/gold_please.mp3" type="audio/mpeg">
 </audio>
 
 When I heard the alarm sounds (aoe2 taunt) I would run the script again on the selling address and listen to the selling begin.
