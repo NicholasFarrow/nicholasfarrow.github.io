@@ -100,6 +100,7 @@ Despite claims from KuCoin CEO of the suspects being found, the funds are still 
 * Swipe (SXP) $0.4M USD
 * Ampleforth (AMPL) $8.7M USD (might be frozen)
 * **Dragon** (DRGN) $1.4M USD
+
 These are all listed on FTX. Also there is still $0.5M USD of DMM in another address [0x2b9fd...](https://etherscan.io/address/0x2b9fde1ee93f17e7534674b777f4fcc1a371e4bf#tokentxns). 
 
 I don't trade very often, but this was a very fortunate low-risk way to stack a little more bitcoin. If you found this useful or perhaps even profitable, please consider supporting me:
