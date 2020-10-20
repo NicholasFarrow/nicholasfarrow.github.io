@@ -25,7 +25,7 @@ comments: true
 ---
 On the 25th of September the cryptocurrency exchange KuCoin was hacked for over $200M worth of Bitcoin, Ethereum, and ERC-20 tokens. By gaining access to the private key of KuCoin's *hot wallet*, the wallet used for day-to-day withdrawals and transactions, the hacker was able to completely drain the funds into addresses they controlled. In this post I explain how noticing a pattern in the hacker's behaviour and a quick python script allowed me to earn some sweet satoshis from this unfortunate event.
 
-Note: It appears the [has been caught](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this.
+Note: It appears the [has been found](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this. **BUT**, stolen funds are still on the move and potential for this strategy remains.
 
 # Observing the Wild Hacker
 Just one day after stealing the funds, the hacker began selling the >$100m stolen Ethereum ERC-20 tokens, starting with Ocean and Sythetix Network Token. Selling patterns emerged early on:
@@ -94,6 +94,13 @@ While in some sense this is profiting from the exchange heist, all this informat
 * Turkey bots and algos that were not anticipating thanksgiving.
 * Weak hand token 'holders' who panic dumped their investment. From the tokens I have checked, all have recovered from this short term crash.
 At one point I joined one of the token's investing groupchat where I saw many people excited for the opportunity to to invest in the project at a discounted price (perhaps a cope but they would've made it if they bought the bottom).
+
+# Remaining Opportunity - Update 2020-10-21
+Despite claims from KuCoin CEO of the suspects being found, the funds are still being actively mixed and sold. Coins I am watching out for on the ([0xeab...](https://etherscan.io/address/0xeb31973e0febf3e3d7058234a5ebbae1ab4b8c23#tokentxns)) address:
+* Swipe (SXP) $0.4M USD
+* Ampleforth (AMPL) $8.7M USD (might be frozen)
+* **Dragon** (DRGN) $1.4M USD
+These are all listed on FTX. Also there is still $0.5M USD of DMM in another address [0x2b9fd...](https://etherscan.io/address/0x2b9fde1ee93f17e7534674b777f4fcc1a371e4bf#tokentxns). 
 
 I don't trade very often, but this was a very fortunate low-risk way to stack a little more bitcoin. If you found this useful or perhaps even profitable, please consider supporting me:
 
