@@ -4,12 +4,6 @@ title: "KuCoin Hackers Apparently Found, But They're Still Mixing Loot"
 author_profile: true
 last_modified_at: 2020-10-20T03:20:02-05:00
 date: 2020-10-20
-excerpt: "KuCoin CEO announced the hackers have been found, but you can see they're still mixing more than $2M USD  of stolen funds with Tornado Cash."
-header:
-  teaser: "/assets/images/kucoin/kucoinpost2header.png"
-  og_image: "/assets/images/kucoin/kucoinpost2header.png"
-  image: "/assets/images/kucoin/kucoinpost2head.png"
-  show_overlay_excerpt: false
 
 layout: single
 classes: wide
@@ -22,7 +16,7 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
-Eight days after the $200M KuCoin hack, the CEO Johnny Lyu announced that the suspects had been found:
+Eight days after the $200M hack, the KuCoin CEO Johnny Lyu announced that the suspects had been found:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A quick update since my last livestream on Sep 30. <br><br>After a thorough investigation, we have found the suspects of the 9.26 <a href="https://twitter.com/hashtag/KuCoin?src=hash&amp;ref_src=twsrc%5Etfw">#KuCoin</a> Security Incident with substantial proof at hand. Law enforcement officials and police are officially involved to take action.</p>&mdash; lyu_johnny (@lyu_johnny) <a href="https://twitter.com/lyu_johnny/status/1312359615091277824?ref_src=twsrc%5Etfw">October 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
