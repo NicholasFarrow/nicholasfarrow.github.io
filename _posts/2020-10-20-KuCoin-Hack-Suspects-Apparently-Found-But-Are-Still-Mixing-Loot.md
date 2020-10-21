@@ -22,6 +22,11 @@ toc: false
 toc_label: "Contents"
 comments: true
 ---
+<center>
+	<a href="https://nickfarrow.com/Copy-Trading-the-KuCoin-Hacker/"><img src="/assets/images/kucoin/firstpostcard.png"></a>
+</center>
+**Note**: *Given the hacker is still moving funds, there's a chance for another [awesome copy-trade short opportunity](https://nickfarrow.com/Copy-Trading-the-KuCoin-Hacker/)*
+
 Eight days after the $200M hack, the KuCoin CEO Johnny Lyu announced that the suspects had been found:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A quick update since my last livestream on Sep 30. <br><br>After a thorough investigation, we have found the suspects of the 9.26 <a href="https://twitter.com/hashtag/KuCoin?src=hash&amp;ref_src=twsrc%5Etfw">#KuCoin</a> Security Incident with substantial proof at hand. Law enforcement officials and police are officially involved to take action.</p>&mdash; lyu_johnny (@lyu_johnny) <a href="https://twitter.com/lyu_johnny/status/1312359615091277824?ref_src=twsrc%5Etfw">October 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
