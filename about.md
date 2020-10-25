@@ -8,12 +8,13 @@ classes: wide
 layout: single
 title: About
 ---
-## **I am currently looking to take on more work and projects**, please see my [CV](/assets/resume.pdf) and [contact me](mailto:nicholas.w.farrow@gmail.com).
+## **I am currently looking to take on more work and projects**, please see my [CV](/assets/resume.pdf) and [contact me](mailto:nick@nickfarrow.com).
 
 
-My name is Nick, I have recently:
+Recently:
+* 
 * Completed my honours year of Physics at Monash University.
-  - My research relates to the interpretation of [gravitational waves](https://en.wikipedia.org/wiki/Gravitational_wave) which can originate from the merger of binary neutron stars.
+  - My research relates to the interpretation of [gravitational waves](https://en.wikipedia.org/wiki/Gravitational_wave) that originate from the merger of two neutron stars.
   - Previously I investigated the [mass distribution of binary neutron stars](https://arxiv.org/abs/1902.03300) in our Galaxy.
 
 * Worked as a part-time mathematics & physics tutor, as well as some ski instructing during the Australian winter.
