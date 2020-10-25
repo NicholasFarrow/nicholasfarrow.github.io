@@ -12,8 +12,8 @@ title: About
 
 
 Recently:
-* 
 * Completed my honours year of Physics at Monash University.
+  - Coauthored a paper on the origin of the [gravitational wave signal GW190425](https://nickfarrow.com/On-the-Origin-of-GW190425/).
   - My research relates to the interpretation of [gravitational waves](https://en.wikipedia.org/wiki/Gravitational_wave) that originate from the merger of two neutron stars.
   - Previously I investigated the [mass distribution of binary neutron stars](https://arxiv.org/abs/1902.03300) in our Galaxy.
 
