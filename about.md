@@ -1,8 +1,6 @@
 ---
 layout: posts
 author_profile: true
-header:
-  image: "/assets/images/new.png"
 related: true
 classes: wide
 layout: single
@@ -10,6 +8,7 @@ title: About
 ---
 ## **I am currently looking to take on more work and projects**, please see my [CV](/assets/resume.pdf) and [contact me](mailto:nick@nickfarrow.com).
 
+![me skiing](/assets/images/ski.jpg)
 
 Recently:
 * Completed my honours year of Physics at Monash University.
@@ -25,3 +24,7 @@ Most recently I have been interested in:
   - ![desktop image](/assets/images/flextop.png)
 * Cryptocurrency tech, primarily decentralised prediction markets & exchanges.
 * Web scraping & other quickly cooked up python projects.
+
+
+[Secure Contact (PGP)](/pgp.txt)
+
