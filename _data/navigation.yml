@@ -1,5 +1,7 @@
 #main links
 main:
+  - title: "no bloat website"
+    url: "https://nb.nickfarrow.com"
   - title: "BTCMessage"
     url: https://btcmessage.com
   - title: "₿ Node"
