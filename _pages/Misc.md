@@ -11,26 +11,26 @@ permalink: /Misc/
 All of the mentioned `packages` can be downloaded using `sudo apt-get install PACKAGE`.
 ## Music in terminal
 Using `mpv` and `youtube-dl` we can stream a single song using
-~~~shell
+```shell
 mpv https://youtu.be/JUpidCc7wwY --no-video
-~~~
+```
 or shuffle a whole playlist
-~~~shell
+```shell
 mpv PLAYLIST_LINK --shuffle --no-video
-~~~
+```
 
 We can create a audio visual using `vis` in another terminal
 <img src="/assets/images/Misc/audioVisual.png" alt="Visual example" width="70%"/>
 
 ## Random wallpaper from folder
-~~~shell
+```shell
 feh --randomize --bg-fill ~/Pictures/Wallpapers/*
-~~~
+```
 
 ## Multiscreen Streaming 
 Automatically switch OBS streaming scene to desktop with current mouse location:
 
-~~~shell
+```shell
 #!/bin/bash
 # Whenever out mouse is past XSPLIT in the X-direction,
 # A hotkey is sent to OBS to change scenes
@@ -60,4 +60,4 @@ do
 		echo "CHANGE RIGHT"
 	fi
 done
-~~~
+```

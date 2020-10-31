@@ -34,81 +34,81 @@ Replacing the last number in the URL (5108) with another number, 0001, we can vi
 ![0001](https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.0001.jpg)
 
 We want to write some python which downloads and saves one of these images. First, we can store the URL as a string:
-~~~python
+```python
 imageNumber = "0001"
 URL = "https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.{}.jpg".format(imageNumber)
-~~~
+```
 
 Now we can use the `urllib` module to download this image to a folder we have created `out`.
-~~~python
+```python
 from urllib import request
 request.urlretrieve(URL, 'out/image0001.jpg')
-~~~
+```
 
 We can now generalise this by creating a python function which takes an input `imageNumber` and output`directory`:
-~~~python
+```python
 def getImage(imageNumber, directory):
     URL = "https://svs.gsfc.nasa.gov/vis/a000000/a004400/a004442/frames/730x730_1x1_30p/moon.{}.jpg".format(imageNumber) 
     saveName = directory + imageNumber + ".jpg"
     request.urlretrieve(URL, saveName)
     return
-~~~
+```
 Now we can easily download image `0999` into folder `out` with `getImage("0999", 'out/')`.
 
 We wish to download all 8761 images to create a video with high frames per second. Before the downloading, first we write a small function which assists with the '0001' formatting style (moon.1.jpg does not exist!). 
 
 We want a function which takes an integer input `n`, and then adds some leading `0s`. The number of zeros required is equal to 4 minus the number of digits, the length of the number as a string i.e `4 - len(str(n))`.
 
-~~~python
+```python
 def addZeros(imageNumber):
     numAdd = 4 - len(str(imageNumber))
     return "0" * numAdd + str(imageNumber) 
-~~~
+```
 
 Now we can download image 3 using `getImage(addZeros(3), 'out/')`.
 
 Or, more easily, we can use Python's string formatting:
-~~~python
+```python
 def addZeros(imageNumber):
     return '{:04d}'.format(imageNumber)
-~~~
+```
 which will add leading zeros up to 4 digits. (Thanks /u/flutefreak7)
 
 From here we can download all 8761 images:
-~~~python
+```python
 for imageNumber in range(1, 8761):
     print("Downloading image #{}".format(imageNumber))
     getImage(addZeros(imageNumber), 'out/')
-~~~
+```
 These images might take a while to download!
 
 Once all the images have been downloaded we can create a video using the `imageio` module. First we create a list containing all the file locations. We can do this in a traditional loop:
-~~~python
+```python
 files = []
 for imageNumber in range(1, 8761):
     files.append('out/' + addZeros(imageNumber) + '.jpg')
-~~~
+```
 or we can do this in a more pythonic way using list comprehension:
-~~~python
+```python
 files = ['out/{}.jpg'.format(addZeros(imageNumber)) 
         for imageNumber in range(1, 8761)]
-~~~
+```
 
 Now we can load all these images with `imageio` in a similar way:
-~~~python
+```python
 import imageio
 images = [imageio.imread(file) for file in files]
-~~~
+```
 
 Finally, we can create a gif using:
-~~~python
+```python
 imageio.mimsave('moonAnimation.gif', images)
-~~~
+```
 
 Or we can create an HD video using `ffmpeg`:
-~~~shell
+```shell
 $ ffmpeg -r 25 -i images/%04d.jpg -vb 20M moon.mp4 
-~~~
+```
 
 <iframe width="777" height="720" src="https://www.youtube.com/embed/Cz1ED7FW4dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
