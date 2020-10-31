@@ -34,12 +34,12 @@ The following setup definitely works on Ubuntu, but it and other distros may req
 The 'gaps' means that tiled windows can have controllable distance between them, as well as a gap border surrounding the outside of the tiles. I personally use [rounded i3-gaps](https://github.com/resloved/i3) which has nice rounded corners. 
 
 You can install rounded i3-gaps with
-~~~shell
+```shell
 git clone git clone https://github.com/resloved/i3 i3-gaps
 cd i3-gaps/
 make
 sudo make install
-~~~
+```
 Then add `exec i3` to your `~/.xinitrc`.
 
 [See here](https://www.youtube.com/watch?v=GKviflL9XeI) for a good introductory video on navigating `i3` using the keyboard. Also, see my [i3 config](https://github.com/nickfarrow/plugfiles/blob/arch-x1/.config/i3/config) which you should install in `~/.config/i3/config` and customise.
@@ -52,12 +52,12 @@ I use [tryone's compton fork](https://github.com/tryone144/compton) which includ
 ![compton blur comparison](/assets/images/blurComparison.png)
 
 You can install compton with:
-~~~shell
+```shell
 git clone https://github.com/tryone144/compton
 cd compton
 make
 make install
-~~~
+```
 and I run on startup via my `i3` config using `exec_always --no-startup-id compton --blur-background --blur-method kawase --blur-strength 8 --opacity-rule 30:'class_g="st"' --backend glx`.
 
 Checkout `~/.config/compton.conf` for endless configuration. For `i3` I like setting `inactive-opacity = 0.95;` so that **EVERY** window will become very slightly transparent when innactive. This makes it easier to observe the active window.
@@ -80,10 +80,10 @@ You can find my [polybar config here](https://github.com/nickfarrow/plugfiles/bl
 I am using [Luke Smith's fork](https://github.com/LukeSmithxyz/st) of the suckless simple terminal (st) which has some really nice features such as scrollback, font-size hotkeys, good text copy/paste.
 
 To install:
-~~~shell
+```shell
 git clone https://github.com/LukeSmithxyz/st
 cd st
 sudo make install
-~~~
+```
 
 Message me if you need any help with any of the above.
