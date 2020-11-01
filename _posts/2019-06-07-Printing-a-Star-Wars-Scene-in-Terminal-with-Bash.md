@@ -41,7 +41,7 @@ $ telnet towel.blinkenlights.nl | sed -e 's/.\[H/Z/g' | tee mainScenes
 ```
 
 We sit through the whole animation as it saves each frame to the file.
-``` shell
+```shell
 $ cat mainScenes
 .
 .
