@@ -46,25 +46,25 @@ SHA256("nicko")
 Notice how just adding a single letter to the input string completely changes the hash. Also see how the hash function outputs a string of fixed length regardless of input length.
 
 ## Bitcoin Addresses (Legacy P2PKH)
-In Bitcoin there are now multiple types of addresses (see [/wiki/Address](https://en.bitcoin.it/wiki/Address)). The original "legacy" addresses implemented by Satoshi Nakamoto begin with the number `1`: `1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7`. This address type is known as *Pay-to-PubkeyHash* or **P2PKH** for short. Legacy addresses are calculated using the following scheme:
+In Bitcoin there are now multiple types of addresses (see [/wiki/Address](https://en.bitcoin.it/wiki/Address)). The original "legacy" addresses implemented by Satoshi Nakamoto begin with the number `1`: `1K4Y7MF8uXFu7GrwvDcUpwEoNkKcREFnh7`. This address type is known as *Pay-to-PubkeyHash* or **P2PKH** for short.
 
-With `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2352`:
-1. Calculate the SHA-256 hash of the public key 
+Here are the steps required to calculate a Legacy address, I'm using `public_key=0250863ad64a87ae8a2fe83c1af1a8403cb53f53e486d8511dad8a04887e5b2352`:
+1. **Calculate the SHA-256 hash of the public key**
 	* `SHA256(public_key) = 0b7c28c9b7290c98d7438e70b3d3f7c848fbd7d1dc194ff83f4f7cc9b1378e98`
-2. Calculate the RIPEMD-160 hash of this SHA-256 hash 
+2. **Calculate the RIPEMD-160 hash of this SHA-256 hash**
 	* `RIPEMD160(SHA256(public_key)) = f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-3. Add a version byte in front of this to complete our address (`0x00` for main-net)
+3. **Add a version byte in front of this to complete our address (`0x00` for main-net)**
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31`
-4. To create a *checksum* we take the SHA-256 of this extended RIPEMD-160 hash **twice** and take the first 4 bytes
+4. **To create a *checksum* we take the SHA-256 of this extended RIPEMD-160 hash *twice* and take the first 4 bytes**
 	* `SHA256(SHA256(0x00 & RIPEMD160(SHA256(public_key)))) = c7f18fe8fcbed6396741e58ad259b5cb16b7fd7f041904147ba1dcffabf747fd`
 	* `c7f18fe8` is our checksum
-5. Add the checksum to the end of the original RIPEMD160 hash at step 3
+5. **Add the checksum to the end of the original RIPEMD160 hash at step 3**
 	* `00f54a5851e9372b87810a8e60cdd2e7cfd80b6e31c7f18fe8`
-6. Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string
+6. **Convert the byte result from hexidecimal into a [base58](https://en.bitcoin.it/wiki/Base58Check_encoding) string**
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
-7. Remove any extra leading 1's. In base58 a '1' represents a value of zero and thus has no value at the front of address. However, a leading '1' is included for each leading `00` byte.	* Nothing needs to be done to the address above as it only has one 1.
+7. **Remove any extra leading 1's. In base58 a '1' represents a value of zero and thus has no value at the front of address.** However, a leading '1' is included for each leading `00` byte.
+    * Nothing needs to be done here as my address above only has a single 1, matching the single `0x00`.
 	* `1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs`
-	
 
 It is a complicated scheme! But it includes several very useful features which are detailed below.
 
@@ -109,13 +109,13 @@ int main() {
 	SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
     /* Declare the private variable as a 32 byte unsigned char */
     unsigned char seckey[32];
-    
+
     /* Load private key (seckey) from random bytes */
     FILE *frand = fopen("/dev/urandom", "r");
-    
+
     /* Read 32 bytes from frand */
     fread(seckey, 32, 1, frand);
-    
+
     /* Close the file */
     fclose(frand);
 
@@ -186,7 +186,7 @@ We need to define the type byte at the top of our file with `typedef unsigned ch
 
 First, let us duplicate our public key into `s` by looping through each byte. Uncompresse public keys are 65 bytes:
 ```c
-int j;	
+int j;
 for (j = 0; j < 65; j++) {
 	s[j] = pk_bytes[j];
 }
@@ -211,7 +211,7 @@ memcpy(rmd + 21, SHA256(SHA256(rmd, 21, 0), SHA256_DIGEST_LENGTH, 0), 4);
 ```
 To use `memcpy` we need to `#include <string.h>` at the top of our file.
 
-Now we are very close to a usable bitcoin address, all that is left is to convert these bytes into base58. 
+Now we are very close to a usable bitcoin address, all that is left is to convert these bytes into base58.
 
 We can use this `base58` function to convert into base 58. Placing `base58()` above our `main()` function:
 ```c
