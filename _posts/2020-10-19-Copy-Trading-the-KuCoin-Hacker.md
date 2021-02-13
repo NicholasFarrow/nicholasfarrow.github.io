@@ -25,7 +25,7 @@ comments: true
 ---
 On the 25th of September the cryptocurrency exchange KuCoin was hacked for over $200M worth of Bitcoin, Ethereum, and ERC-20 tokens. By gaining access to the private key of KuCoin's *hot wallet*, the wallet used for day-to-day withdrawals and transactions, the hacker was able to completely drain the funds into addresses they controlled. In this post I explain how noticing a pattern in the hacker's behaviour and a quick python script allowed me to earn some sweet satoshis from this unfortunate event.
 
-Note: It appears the [has been found](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this. **BUT**, stolen funds are still on the move and potential for this strategy remains.
+Note: It appears the hacker [has been found](https://news.bitcoin.com/kucoin-ceo-says-exchange-hack-suspects-found-204-million-recovered/) since the time of writing this.
 
 # Observing the Wild Hacker
 Just one day after stealing the funds, the hacker began selling the >$100m stolen Ethereum ERC-20 tokens, starting with Ocean and Sythetix Network Token. Selling patterns emerged early on:
@@ -108,8 +108,6 @@ I don't trade very often, but this was a very fortunate low-risk way to stack a 
 **BTC: bc1qxqf3w0hd2x0zuhs82utvxrk435yzlw05w9t87s**
 
 [Sign up for FTX.com](https://ftx.com/#a=apePost) if you haven't already.
-
-**Don't forget to share with your degenerate crypto trading friends :)**
 
 <!-- Initially routine, but started to switch it up and get lazy/distracted. Selling at an impossibly slow speed.
 # Liquid Knives check the Prize
