@@ -20,7 +20,7 @@ comments: true
 ---
 My current Linux setup (i3-gaps, compton, wal, st, + more).
 
-![desktop](/assets/images/deepfried.png)
+![wal gif](/assets/images/waldopamine.gif)
 
 > **Make each program do one thing well.** *To do a new job, build afresh rather than complicate old programs by adding new "features".*	--[Douglas McIlroy, Bell Labs (1978)](https://en.wikipedia.org/wiki/Unix_philosophy)
 
