@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Copy Trading the KuCoin Hacker for Easy Profit"
+title: "Front Running the KuCoin Hacker for Profit"
 author_profile: true
 last_modified_at: 2020-10-19T03:20:02-05:00
 date: 2020-10-19
