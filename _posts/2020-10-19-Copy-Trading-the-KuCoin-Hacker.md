@@ -4,7 +4,7 @@ title: "Front Running the KuCoin Hacker for Profit"
 author_profile: true
 last_modified_at: 2020-10-19T03:20:02-05:00
 date: 2020-10-19
-excerpt: "I spent two weeks copy trading the KuCoin hacker on FTX for absolute bank. High leverage great ape."
+excerpt: "I spent two weeks copy trading the KuCoin hacker on FTX for profit. High leverage great ape shorts."
 header:
   teaser: "/assets/images/kucoin/teaser2.png"
   og_image: "/assets/images/kucoin/teaser2.png"
